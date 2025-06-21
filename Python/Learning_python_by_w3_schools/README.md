@@ -1,2 +1,2 @@
 # Learning-Python-By-W3schools
-Here it's my first Git Repository which is about my learning Python by W3schools
+here is the learning python files in it.. which i learned in my learning phase..
