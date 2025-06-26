@@ -1,7 +1,7 @@
 div {
     height: 100px;
     width: 100px;
-    background-image: url(/Photos/nature.jpeg);
+    background-image: url(/CSS/CSS_Learning/Photos/nature.jpeg);
     background-size: cover;
     color: white;
     position: fixed;
