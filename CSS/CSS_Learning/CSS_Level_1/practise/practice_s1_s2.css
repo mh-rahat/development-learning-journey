@@ -1,0 +1,46 @@
+
+ /* practise set 1 */
+
+ /* practise queston 1 */
+#box {
+    background-color: blue;
+    color: white;
+}
+
+/* practise question 2 */
+.heading {
+    color: green;
+}
+
+/* h1, h2, h3 {
+    color: brown;
+} */
+
+/* practise question 3 */
+button {
+    background-color: green;
+}
+
+/* practise set 2 */
+
+/* practise question 1 */
+#bangladesh {
+    text-align:center;
+    text-transform: capitalize;
+
+}
+
+/* practise question 2 */
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* practise question 3 */
+
+#outer {
+    font-size: 25px;
+}
+
+#inner {
+    font-size: 10px;
+}

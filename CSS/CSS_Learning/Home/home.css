@@ -1,0 +1,37 @@
+* {
+    text-align: center;
+    background-color: #887d7f;
+}
+
+h1 {
+    font-size: 70px;
+    color: rgb(3, 3, 31);
+    font-family: Arial, Helvetica, sans-serif;
+    animation: alternate;
+}
+
+div {
+    height: 200px;
+    background-color: rgb(189, 173, 204);
+    border: 2px solid black;
+    color: rgb(238, 226, 234);
+    margin-bottom: 10px;
+    font-size: xx-large;
+    text-decoration: none;
+
+
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: azure; 
+   
+    
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(102, 102, 199);
+}
+

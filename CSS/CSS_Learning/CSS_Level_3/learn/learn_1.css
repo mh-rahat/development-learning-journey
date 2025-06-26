@@ -1,0 +1,56 @@
+/* Unit like %, em, rem, vh, vw */
+#box1 {
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    font-size: 10px;
+}
+
+#box2 {
+    height: 50px;
+    width: 30%;
+    background-color: yellow;
+    margin-left: 10%;
+    font-size: 2em;
+    width: 5rem;
+    /* height: 100vh; */
+
+}
+
+/* Position Playground */
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+}
+
+#div1 {
+    position: static;
+}
+
+#div2 {
+    position: relative;
+    top: 200px;
+    left: 10px;
+}
+
+#div3 {
+    position: absolute;
+    top: 500px;
+    left: 20px;
+}
+
+#div4 {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+#div5 {
+    position: sticky;
+    top: 300px;
+}

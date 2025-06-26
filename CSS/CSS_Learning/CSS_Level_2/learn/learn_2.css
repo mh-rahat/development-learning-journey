@@ -1,0 +1,56 @@
+/* Display Property */
+#thisdiv {
+    background-color: pink;
+    display: inline;
+    height: 200px;
+    width: 200px;
+}
+
+
+#box {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    margin: 25px;
+    /* display: inline; */
+    display: inline-block;
+}
+
+#boxnone {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    margin: 25px;
+    display: none;
+
+}
+
+/* RGBA - Alpha Channel */
+#boxrgba1  {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0, 255, 0, .5);
+    display: inline-block;
+}
+
+#boxrgba2  {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0, 255, 0, .75);
+    display: inline-block;
+}
+
+#boxrgba3 {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0, 255, 0, 1);
+    display: inline-block;
+}
+
+
+
+
+
+button {
+    display: block;
+}

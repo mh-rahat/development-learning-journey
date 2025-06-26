@@ -1,0 +1,67 @@
+
+/* *{
+    color: red;
+} */
+
+/* designing of heading of headingOne & headingTwo, both is a id */
+#headingOne {
+    color: yellow;
+}
+
+#headingTwo {
+    color: brown;
+}
+
+/* designing of heading myclass, myclass is a class */
+.myClass {
+    color: black;
+}
+
+/* paragraph tag designing */
+p {
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center;
+    text-decoration: blue dotted underline;
+    font-weight: normal;
+    
+}
+
+/* anchor tags designing */
+a {
+    color: blue;
+    text-decoration: none ;
+}
+
+/* font-family, line-height & text-transform*/
+#one {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 200%;
+    text-transform: capitalize;
+}
+
+#two {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+
+/* font-size*/
+#para1 {
+    font-size: 25px;
+    text-align: start;
+}
+
+#para2 {
+    font-size: 20px;
+    text-align: start;
+}
+
+#para3 {
+    font-size: 15px;
+    text-align: start;
+}
