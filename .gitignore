@@ -1,3 +1,5 @@
 *.mp4
-/javascript/
-/css/tailwind-css-learning/
+javascript/
+node_modules/
+
+
