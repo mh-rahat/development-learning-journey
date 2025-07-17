@@ -1,5 +1,6 @@
 // Class means a structure, blueprint, or model used to create objects.
 
+// Class Object
 class Addition {
   add() {
     int a = 20, b = 50, c;
