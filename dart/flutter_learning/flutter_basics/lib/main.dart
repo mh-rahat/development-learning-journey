@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/button_page.dart';
 import 'package:flutter_basics/widgets/center_page.dart';
 import 'package:flutter_basics/widgets/container_page.dart';
 import 'package:flutter_basics/widgets/text_page.dart';
@@ -74,6 +75,19 @@ class HomeSreen extends StatelessWidget {
                 );
               },
               child: Text('Center'),
+            ),
+
+            // Button Widget Page
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ButtonWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Button'),
             ),
           ],
         ),
