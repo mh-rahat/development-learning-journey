@@ -5,6 +5,7 @@ import 'package:flutter_basics/widgets/column_row_page.dart';
 import 'package:flutter_basics/widgets/container_page.dart';
 import 'package:flutter_basics/widgets/image_page.dart';
 import 'package:flutter_basics/widgets/inkwell_page.dart';
+import 'package:flutter_basics/widgets/scrollview_page.dart';
 import 'package:flutter_basics/widgets/text_page.dart';
 
 void main() {
@@ -130,6 +131,19 @@ class HomeSreen extends StatelessWidget {
                 );
               },
               child: Text('Inkwell Page'),
+            ),
+
+            // Scrollview Widget Button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ScrollviewWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Scrollview'),
             ),
           ],
         ),
