@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/widgets/button_page.dart';
 import 'package:flutter_basics/widgets/center_page.dart';
+import 'package:flutter_basics/widgets/column_row_page.dart';
 import 'package:flutter_basics/widgets/container_page.dart';
+import 'package:flutter_basics/widgets/image_page.dart';
 import 'package:flutter_basics/widgets/text_page.dart';
 
 void main() {
@@ -88,6 +90,32 @@ class HomeSreen extends StatelessWidget {
                 );
               },
               child: Text('Button'),
+            ),
+
+            // Image Widge Button
+            ElevatedButton(
+              child: Text('Image'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ImageWidgetPage(),
+                  ),
+                );
+              },
+            ),
+
+            // Column & Row Widge Page
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ColumnRowWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Column & Row'),
             ),
           ],
         ),
