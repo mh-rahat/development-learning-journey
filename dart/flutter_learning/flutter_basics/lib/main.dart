@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Dashboard',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.blue,
+        primarySwatch: Colors.blue,
         appBarTheme: AppBarTheme(backgroundColor: Colors.blue),
       ),
       home: HomeSreen(),
