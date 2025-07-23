@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basics/screens/container_page.dart';
+import 'package:flutter_basics/widgets/center_page.dart';
+import 'package:flutter_basics/widgets/container_page.dart';
+import 'package:flutter_basics/widgets/text_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,7 +37,7 @@ class HomeSreen extends StatelessWidget {
             Text('Select a Topic'),
             SizedBox(height: 20),
 
-            // Container Button
+            // Container Page Button
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -46,6 +48,32 @@ class HomeSreen extends StatelessWidget {
                 );
               },
               child: Text('Container'),
+            ),
+
+            // Text Widget Page Button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TextWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Text'),
+            ),
+
+            // Center Widget Page Button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CenterWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Center'),
             ),
           ],
         ),
