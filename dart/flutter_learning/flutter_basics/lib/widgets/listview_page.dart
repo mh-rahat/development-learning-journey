@@ -11,7 +11,7 @@ class ListviewWidgetPage extends StatelessWidget {
       'Bijoy',
       'Shanto',
       'Rifat',
-      'Siam',
+      'Pranto',
       'Hridoy',
     ];
     return Scaffold(
