@@ -18,9 +18,41 @@ class ListviewWidgetPage extends StatelessWidget {
       appBar: AppBar(title: Text('Listview Page')),
       body: ListView.separated(
         itemBuilder: (context, index) {
-          return Text(
-            arrNames[index],
-            style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
+          return Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    Text(
+                      arrNames[index],
+                      style: TextStyle(
+                        fontSize: 21,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        arrNames[index],
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  arrNames[index],
+                  style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
+                ),
+              ),
+            ],
           );
         },
         itemCount: arrNames.length,
