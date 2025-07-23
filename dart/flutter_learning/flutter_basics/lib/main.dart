@@ -4,6 +4,7 @@ import 'package:flutter_basics/widgets/center_page.dart';
 import 'package:flutter_basics/widgets/column_row_page.dart';
 import 'package:flutter_basics/widgets/container_page.dart';
 import 'package:flutter_basics/widgets/image_page.dart';
+import 'package:flutter_basics/widgets/inkwell_page.dart';
 import 'package:flutter_basics/widgets/text_page.dart';
 
 void main() {
@@ -92,7 +93,7 @@ class HomeSreen extends StatelessWidget {
               child: Text('Button'),
             ),
 
-            // Image Widge Button
+            // Image Widget Button
             ElevatedButton(
               child: Text('Image'),
               onPressed: () {
@@ -105,7 +106,7 @@ class HomeSreen extends StatelessWidget {
               },
             ),
 
-            // Column & Row Widge Page
+            // Column & Row Widget Button
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -116,6 +117,19 @@ class HomeSreen extends StatelessWidget {
                 );
               },
               child: Text('Column & Row'),
+            ),
+
+            // Inkwell Widget Button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const InkwellWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Inkwell Page'),
             ),
           ],
         ),

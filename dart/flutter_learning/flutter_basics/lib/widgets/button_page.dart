@@ -25,13 +25,13 @@ class ButtonWidgetPage extends StatelessWidget {
             ElevatedButton(
               child: Text('Elevated Button'),
               onPressed: () {
-                debugPrint('Elevated Button Pressed !');
+                debugPrint('Elevated Button Pressed!');
               },
             ),
             OutlinedButton(
               child: Text('Outlined Button'),
               onPressed: () {
-                debugPrint('Outlined Button Pressed !');
+                debugPrint('Outlined Button Pressed!');
               },
             ),
           ],
