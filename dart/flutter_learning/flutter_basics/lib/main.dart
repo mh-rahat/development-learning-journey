@@ -35,7 +35,7 @@ class HomeSreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text('Select a Topic'),
+            Text('Click on a Topic !!'),
             SizedBox(height: 20),
 
             // Container Page Button
