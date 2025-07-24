@@ -51,168 +51,170 @@ class HomeSreen extends StatelessWidget {
         ),
       ),
 
-      body: Center(
-        child: Column(
-          children: [
-            Text('Click on a Topic !', style: textStyle20()),
-            SizedBox(height: 20),
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              Text('Click on a Topic !', style: textStyle20()),
+              SizedBox(height: 20),
 
-            // Container Page Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ContainerPage(),
-                  ),
-                );
-              },
-              child: Text('Container'),
-            ),
+              // Container Page Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ContainerPage(),
+                    ),
+                  );
+                },
+                child: Text('Container'),
+              ),
 
-            // Text Widget Page Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const TextWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Text'),
-            ),
+              // Text Widget Page Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const TextWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Text'),
+              ),
 
-            // Center Widget Page Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const CenterWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Center'),
-            ),
+              // Center Widget Page Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const CenterWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Center'),
+              ),
 
-            // Button Widget Page
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ButtonWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Button'),
-            ),
+              // Button Widget Page
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ButtonWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Button'),
+              ),
 
-            // Image Widget Button
-            ElevatedButton(
-              child: Text('Image'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ImageWidgetPage(),
-                  ),
-                );
-              },
-            ),
+              // Image Widget Button
+              ElevatedButton(
+                child: Text('Image'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ImageWidgetPage(),
+                    ),
+                  );
+                },
+              ),
 
-            // Column & Row Widget Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ColumnRowWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Column & Row'),
-            ),
+              // Column & Row Widget Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ColumnRowWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Column & Row'),
+              ),
 
-            // Inkwell Widget Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const InkwellWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Inkwell Page'),
-            ),
+              // Inkwell Widget Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const InkwellWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Inkwell Page'),
+              ),
 
-            // Scrollview Widget Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ScrollviewWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Scrollview'),
-            ),
+              // Scrollview Widget Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ScrollviewWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Scrollview'),
+              ),
 
-            // Listview Widget Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ListviewWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Listview'),
-            ),
+              // Listview Widget Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ListviewWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Listview'),
+              ),
 
-            // CircleAvatar Widget Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const CircleAvatarWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('CircleAvatar'),
-            ),
+              // CircleAvatar Widget Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const CircleAvatarWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('CircleAvatar'),
+              ),
 
-            // Expanded Widget Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ExpandedWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Expanded'),
-            ),
+              // Expanded Widget Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ExpandedWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Expanded'),
+              ),
 
-            // Margin Padding Widget Page
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const MarginPaddingWidgetPage(),
-                  ),
-                );
-              },
-              child: Text('Margin & Padding'),
-            ),
-          ],
+              // Margin Padding Widget Page
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MarginPaddingWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Margin & Padding'),
+              ),
+            ],
+          ),
         ),
       ),
     );
