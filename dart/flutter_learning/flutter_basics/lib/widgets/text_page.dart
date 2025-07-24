@@ -9,11 +9,15 @@ class TextWidgetPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Text Page')),
       body: Center(
-        child: Text(
-          'Hello Flutter Developer!',
-          style: textStyle25(
-            fontWeight: FontWeight.bold,
-            textColor: Colors.black87,
+        child: Card(
+          elevation: 20,
+          shadowColor: Colors.blue,
+          child: Text(
+            'Hello Flutter Developer!',
+            style: textStyle25(
+              fontWeight: FontWeight.bold,
+              textColor: Colors.black87,
+            ),
           ),
         ),
       ),
