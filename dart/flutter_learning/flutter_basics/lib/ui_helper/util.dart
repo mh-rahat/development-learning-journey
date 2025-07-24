@@ -16,3 +16,6 @@ TextStyle textStyle25({
     backgroundColor: Colors.blueGrey,
   );
 }
+
+var emailText = TextEditingController();
+var passwordText = TextEditingController();

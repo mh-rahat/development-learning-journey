@@ -9,15 +9,113 @@ class TextWidgetPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Text Page')),
       body: Center(
-        child: Card(
-          elevation: 20,
-          shadowColor: Colors.blue,
-          child: Text(
-            'Hello Flutter Developer!',
-            style: textStyle25(
-              fontWeight: FontWeight.bold,
-              textColor: Colors.black87,
-            ),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Card(
+                elevation: 10,
+                shadowColor: Colors.blue,
+                child: Text(
+                  'Hello Flutter Developers!',
+                  style: textStyle25(
+                    fontWeight: FontWeight.bold,
+                    textColor: Colors.black87,
+                  ),
+                ),
+              ),
+              Center(
+                child: SizedBox(
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 12),
+                    child: Column(
+                      children: [
+                        TextField(
+                          keyboardType: TextInputType.emailAddress,
+                          controller: emailText,
+                          decoration: InputDecoration(
+                            hintText: 'Enter Email here...',
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(21),
+                              borderSide: BorderSide(
+                                color: Colors.blueAccent,
+                                width: 2,
+                              ),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(21),
+                              borderSide: BorderSide(
+                                color: Colors.blueGrey,
+                                width: 2,
+                              ),
+                            ),
+                            disabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(21),
+                              borderSide: BorderSide(
+                                color: Colors.black,
+                                width: 2,
+                              ),
+                            ),
+
+                            prefixIcon: Icon(Icons.email),
+                            border: OutlineInputBorder(),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: TextField(
+                            controller: passwordText,
+                            obscureText: true,
+                            obscuringCharacter: '*',
+                            decoration: InputDecoration(
+                              hintText: 'Enter Password here...',
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(21),
+                                borderSide: BorderSide(
+                                  color: Colors.blueAccent,
+                                  width: 2,
+                                ),
+                              ),
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(21),
+                                borderSide: BorderSide(
+                                  color: Colors.blueGrey,
+                                  width: 2,
+                                ),
+                              ),
+                              disabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(21),
+                                borderSide: BorderSide(
+                                  color: Colors.black,
+                                  width: 2,
+                                ),
+                              ),
+                              suffixIcon: IconButton(
+                                icon: Icon(
+                                  Icons.remove_red_eye,
+                                  color: Colors.blue,
+                                ),
+                                onPressed: () {},
+                              ),
+                              prefixIcon: Icon(Icons.password),
+                              border: OutlineInputBorder(),
+                            ),
+                          ),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            String uEmail = emailText.text.toString();
+                            String uPassword = passwordText.text;
+                            debugPrint('Email: $uEmail, Password: $uPassword');
+                          },
+                          child: Text('Login'),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
