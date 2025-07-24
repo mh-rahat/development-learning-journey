@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/widgets/button_page.dart';
 import 'package:flutter_basics/widgets/center_page.dart';
+import 'package:flutter_basics/widgets/circleavatar_page.dart';
 import 'package:flutter_basics/widgets/column_row_page.dart';
 import 'package:flutter_basics/widgets/container_page.dart';
 import 'package:flutter_basics/widgets/expanded_page.dart';
@@ -160,6 +161,19 @@ class HomeSreen extends StatelessWidget {
                 );
               },
               child: Text('Listview'),
+            ),
+
+            // CircleAvatar Widget Button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CircleAvatarWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('CircleAvatar'),
             ),
 
             // Expanded Widget Button
