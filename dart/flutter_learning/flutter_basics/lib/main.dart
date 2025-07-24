@@ -26,7 +26,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        appBarTheme: AppBarTheme(backgroundColor: Colors.blueAccent),
+        appBarTheme: AppBarTheme(backgroundColor: Colors.lightBlue),
+        textTheme: TextTheme(
+          headlineLarge: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
+        ),
       ),
       home: HomeSreen(),
     );
@@ -43,7 +46,12 @@ class HomeSreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text('Click on a Topic !!'),
+            Text(
+              'Click on a Topic !',
+              style: Theme.of(
+                context,
+              ).textTheme.headlineLarge!.copyWith(color: Colors.black),
+            ),
             SizedBox(height: 20),
 
             // Container Page Button
