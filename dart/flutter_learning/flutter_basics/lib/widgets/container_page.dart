@@ -16,11 +16,11 @@ class ContainerPage extends StatelessWidget {
             height: 150,
             decoration: BoxDecoration(
               color: Colors.blueGrey,
-              borderRadius: BorderRadius.all(Radius.circular(21)),
               border: Border.all(width: 3, color: Colors.black),
               boxShadow: [
                 BoxShadow(blurRadius: 21, color: Colors.grey, spreadRadius: 11),
               ],
+              shape: BoxShape.circle,
             ),
           ),
         ),
