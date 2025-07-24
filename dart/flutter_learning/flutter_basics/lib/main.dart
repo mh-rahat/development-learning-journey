@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/ui_helper/util.dart';
 import 'package:flutter_basics/widgets/button_page.dart';
 import 'package:flutter_basics/widgets/center_page.dart';
 import 'package:flutter_basics/widgets/circleavatar_page.dart';
@@ -41,17 +42,19 @@ class HomeSreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Flutter Basics')),
+      appBar: AppBar(
+        title: Text(
+          'Flutter Basics',
+          style: Theme.of(
+            context,
+          ).textTheme.headlineLarge!.copyWith(color: Colors.white),
+        ),
+      ),
 
       body: Center(
         child: Column(
           children: [
-            Text(
-              'Click on a Topic !',
-              style: Theme.of(
-                context,
-              ).textTheme.headlineLarge!.copyWith(color: Colors.black),
-            ),
+            Text('Click on a Topic !', style: textStyle20()),
             SizedBox(height: 20),
 
             // Container Page Button

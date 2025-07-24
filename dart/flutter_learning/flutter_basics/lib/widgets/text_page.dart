@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/ui_helper/util.dart';
 
 class TextWidgetPage extends StatelessWidget {
   const TextWidgetPage({super.key});
@@ -10,12 +11,9 @@ class TextWidgetPage extends StatelessWidget {
       body: Center(
         child: Text(
           'Hello Flutter Developer!',
-          style: TextStyle(
-            fontSize: 25,
-            color: Colors.black87,
+          style: textStyle25(
             fontWeight: FontWeight.bold,
-            backgroundColor: Colors.blueGrey,
-            fontFamily: 'FontOswald',
+            textColor: Colors.black87,
           ),
         ),
       ),
