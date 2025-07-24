@@ -3,6 +3,7 @@ import 'package:flutter_basics/widgets/button_page.dart';
 import 'package:flutter_basics/widgets/center_page.dart';
 import 'package:flutter_basics/widgets/column_row_page.dart';
 import 'package:flutter_basics/widgets/container_page.dart';
+import 'package:flutter_basics/widgets/expanded_page.dart';
 import 'package:flutter_basics/widgets/image_page.dart';
 import 'package:flutter_basics/widgets/inkwell_page.dart';
 import 'package:flutter_basics/widgets/listview_page.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        appBarTheme: AppBarTheme(backgroundColor: Colors.blue),
+        appBarTheme: AppBarTheme(backgroundColor: Colors.blueAccent),
       ),
       home: HomeSreen(),
     );
@@ -158,6 +159,19 @@ class HomeSreen extends StatelessWidget {
                 );
               },
               child: Text('Listview'),
+            ),
+
+            // Expanded Widget Button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ExpandedWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Expanded'),
             ),
           ],
         ),
