@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/ui_helper/util.dart';
 
-class TextWidgetPage extends StatelessWidget {
-  const TextWidgetPage({super.key});
+class TextInputWidgetPage extends StatelessWidget {
+  const TextInputWidgetPage({super.key});
 
   @override
   Widget build(BuildContext context) {

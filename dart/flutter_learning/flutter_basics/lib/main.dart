@@ -11,7 +11,7 @@ import 'package:flutter_basics/widgets/inkwell_page.dart';
 import 'package:flutter_basics/widgets/listview_page.dart';
 import 'package:flutter_basics/widgets/margin_padding_page.dart';
 import 'package:flutter_basics/widgets/scrollview_page.dart';
-import 'package:flutter_basics/widgets/text_page.dart';
+import 'package:flutter_basics/widgets/text_input_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -77,11 +77,11 @@ class HomeSreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const TextWidgetPage(),
+                      builder: (context) => const TextInputWidgetPage(),
                     ),
                   );
                 },
-                child: Text('Text'),
+                child: Text('Text Input'),
               ),
 
               // Center Widget Page Button
