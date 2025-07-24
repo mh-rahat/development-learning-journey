@@ -7,6 +7,7 @@ import 'package:flutter_basics/widgets/expanded_page.dart';
 import 'package:flutter_basics/widgets/image_page.dart';
 import 'package:flutter_basics/widgets/inkwell_page.dart';
 import 'package:flutter_basics/widgets/listview_page.dart';
+import 'package:flutter_basics/widgets/margin_padding_page.dart';
 import 'package:flutter_basics/widgets/scrollview_page.dart';
 import 'package:flutter_basics/widgets/text_page.dart';
 
@@ -172,6 +173,19 @@ class HomeSreen extends StatelessWidget {
                 );
               },
               child: Text('Expanded'),
+            ),
+
+            // Margin Padding Widget Page
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MarginPaddingWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Margin & Padding'),
             ),
           ],
         ),
