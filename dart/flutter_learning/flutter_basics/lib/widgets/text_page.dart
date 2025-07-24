@@ -7,13 +7,16 @@ class TextWidgetPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Text Page')),
-      body: Text(
-        'Hello Flutter Devs',
-        style: TextStyle(
-          fontSize: 25,
-          color: Colors.lightBlue,
-          fontWeight: FontWeight.bold,
-          backgroundColor: Colors.orangeAccent,
+      body: Center(
+        child: Text(
+          'Hello Flutter Developer!',
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.black87,
+            fontWeight: FontWeight.bold,
+            backgroundColor: Colors.blueGrey,
+            fontFamily: 'FontOswald',
+          ),
         ),
       ),
     );
