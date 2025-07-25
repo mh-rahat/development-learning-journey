@@ -13,6 +13,10 @@ class ListviewWidgetPage extends StatelessWidget {
       'Rifat',
       'Pranto',
       'Hridoy',
+      'Arafat',
+      'Shuvo',
+      'Emon',
+      'Saimon',
     ];
     return Scaffold(
       appBar: AppBar(title: Text('Listview Page')),
