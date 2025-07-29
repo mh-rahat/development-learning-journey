@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 TextStyle textStyle20() {
-  return TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
+  return TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    fontFamily: 'FontOswald',
+  );
 }
 
 TextStyle textStyle25({
@@ -20,4 +24,4 @@ TextStyle textStyle25({
 var emailText = TextEditingController();
 var passwordText = TextEditingController();
 
-var time = DateTime.now();  
+var time = DateTime.now();
