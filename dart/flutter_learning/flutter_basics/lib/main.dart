@@ -6,6 +6,7 @@ import 'package:flutter_basics/widgets/center_page.dart';
 import 'package:flutter_basics/widgets/circleavatar_page.dart';
 import 'package:flutter_basics/widgets/column_row_page.dart';
 import 'package:flutter_basics/widgets/container_page.dart';
+import 'package:flutter_basics/widgets/custom_widget.dart';
 import 'package:flutter_basics/widgets/date_time_page.dart';
 import 'package:flutter_basics/widgets/date_time_picker_page.dart';
 import 'package:flutter_basics/widgets/expanded_page.dart';
@@ -268,6 +269,19 @@ class HomeSreen extends StatelessWidget {
                   );
                 },
                 child: Text('Callback Function'),
+              ),
+
+              // Custom Widget Page
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const CustomWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Custom Widget'),
               ),
             ],
           ),
