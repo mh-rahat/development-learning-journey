@@ -19,3 +19,5 @@ TextStyle textStyle25({
 
 var emailText = TextEditingController();
 var passwordText = TextEditingController();
+
+var time = DateTime.now();  
