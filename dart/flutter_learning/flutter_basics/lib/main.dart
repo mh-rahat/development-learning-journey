@@ -6,6 +6,7 @@ import 'package:flutter_basics/widgets/circleavatar_page.dart';
 import 'package:flutter_basics/widgets/column_row_page.dart';
 import 'package:flutter_basics/widgets/container_page.dart';
 import 'package:flutter_basics/widgets/date_time_page.dart';
+import 'package:flutter_basics/widgets/date_time_picker_page.dart';
 import 'package:flutter_basics/widgets/expanded_page.dart';
 import 'package:flutter_basics/widgets/image_page.dart';
 import 'package:flutter_basics/widgets/inkwell_page.dart';
@@ -226,6 +227,19 @@ class HomeSreen extends StatelessWidget {
                   );
                 },
                 child: Text('Date & Time'),
+              ),
+
+              // Date & Time Picker Widget Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const DateTimePickerWidgetPage(),
+                    ),
+                  );
+                },
+                child: Text('Date & Time Picker'),
               ),
             ],
           ),
