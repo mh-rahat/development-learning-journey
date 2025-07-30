@@ -77,20 +77,6 @@ class HomeSreen extends StatelessWidget {
               children: [
                 Text('Click on a Topic !', style: textStyle20()),
 
-                // Counter App Page
-                RoundedButton(
-                  buttonName: 'Counter App',
-                  textStyle: textStyle16(),
-                  callBack: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const CounterAppPage(),
-                      ),
-                    );
-                  },
-                ),
-
                 // Container Page Button
                 RoundedButton(
                   buttonName: 'Container',
@@ -390,6 +376,20 @@ class HomeSreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const IconWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Counter App Page
+                RoundedButton(
+                  buttonName: 'Counter App',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CounterAppPage(),
                       ),
                     );
                   },
