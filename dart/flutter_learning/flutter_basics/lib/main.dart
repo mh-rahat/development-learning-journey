@@ -90,9 +90,9 @@ class HomeSreen extends StatelessWidget {
                   },
                 ),
 
-                // Text Input Widget Page Button
+                // Text, Text Input, Text Rich Widget Page Button
                 RoundedButton(
-                  buttonName: 'Text Input',
+                  buttonName: 'Text Input & Text Rich',
                   textStyle: textStyle16(),
                   callBack: () {
                     Navigator.push(
@@ -118,7 +118,7 @@ class HomeSreen extends StatelessWidget {
                   },
                 ),
 
-                // Button Widget Page
+                // Button Widget Page Button
                 RoundedButton(
                   buttonName: 'Button',
                   textStyle: textStyle16(),
@@ -352,7 +352,7 @@ class HomeSreen extends StatelessWidget {
                   },
                 ),
 
-                // Sizedbox Widget Page
+                // Sizedbox Widget Button
                 RoundedButton(
                   buttonName: 'SizedBox',
                   textStyle: textStyle16(),

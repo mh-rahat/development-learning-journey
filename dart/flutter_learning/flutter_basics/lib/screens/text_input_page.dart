@@ -7,7 +7,7 @@ class TextInputWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Text Page')),
+      appBar: AppBar(title: Text('Text Input & Text Rich Page')),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -109,6 +109,37 @@ class TextInputWidgetPage extends StatelessWidget {
                             debugPrint('Email: $uEmail, Password: $uPassword');
                           },
                           child: Text('Login'),
+                        ),
+
+                        SizedBox(height: 50),
+                        Text('Rich Text Widget'),
+                        // RichText Widget
+                        RichText(
+                          text: TextSpan(
+                            style: TextStyle(color: Colors.grey, fontSize: 21),
+                            children: <TextSpan>[
+                              TextSpan(text: 'Hello '),
+                              TextSpan(
+                                text: 'World!',
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  color: Colors.blue,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              TextSpan(text: ' Welcome to '),
+                              TextSpan(
+                                text: 'Flutter!',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 35,
+                                  color: Colors.deepOrangeAccent,
+                                  fontStyle: FontStyle.italic,
+                                  fontFamily: 'FontOswald',
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
