@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/screens/icon_page.dart';
 import 'package:flutter_basics/screens/sizedbox_page.dart';
 import 'package:flutter_basics/screens/stack_page.dart';
 import 'package:flutter_basics/screens/wrap_page.dart';
@@ -21,6 +22,7 @@ import 'package:flutter_basics/screens/margin_padding_page.dart';
 import 'package:flutter_basics/screens/scrollview_page.dart';
 import 'package:flutter_basics/screens/text_input_page.dart';
 import 'package:flutter_basics/widgets/rounded_button.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -361,6 +363,20 @@ class HomeSreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const SizedboxWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Icon Widget Button
+                RoundedButton(
+                  buttonName: 'Icon',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const IconWidgetPage(),
                       ),
                     );
                   },
