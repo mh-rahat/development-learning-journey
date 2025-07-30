@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basics/screens/basic_calculator_app.dart';
 import 'package:flutter_basics/screens/counter_app_page.dart';
 import 'package:flutter_basics/screens/icon_page.dart';
+import 'package:flutter_basics/screens/mapping_list_page.dart';
 import 'package:flutter_basics/screens/sizedbox_page.dart';
 import 'package:flutter_basics/screens/stack_page.dart';
 import 'package:flutter_basics/screens/wrap_page.dart';
@@ -405,6 +406,20 @@ class HomeSreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const BasicCalculatorAppPage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Mapping List Page Button
+                RoundedButton(
+                  buttonName: 'Mapping List',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MappingListPage(),
                       ),
                     );
                   },
