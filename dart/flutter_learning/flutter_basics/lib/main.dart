@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/screens/counter_app_page.dart';
 import 'package:flutter_basics/screens/icon_page.dart';
 import 'package:flutter_basics/screens/sizedbox_page.dart';
 import 'package:flutter_basics/screens/stack_page.dart';
@@ -22,7 +23,6 @@ import 'package:flutter_basics/screens/margin_padding_page.dart';
 import 'package:flutter_basics/screens/scrollview_page.dart';
 import 'package:flutter_basics/screens/text_input_page.dart';
 import 'package:flutter_basics/widgets/rounded_button.dart';
-
 
 void main() {
   runApp(MyApp());
@@ -76,7 +76,20 @@ class HomeSreen extends StatelessWidget {
             child: Column(
               children: [
                 Text('Click on a Topic !', style: textStyle20()),
-                SizedBox(height: 20),
+
+                // Counter App Page
+                RoundedButton(
+                  buttonName: 'Counter App',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CounterAppPage(),
+                      ),
+                    );
+                  },
+                ),
 
                 // Container Page Button
                 RoundedButton(
@@ -381,8 +394,6 @@ class HomeSreen extends StatelessWidget {
                     );
                   },
                 ),
-
-                
               ],
             ),
           ),
