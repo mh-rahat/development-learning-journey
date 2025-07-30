@@ -92,7 +92,7 @@ class HomeSreen extends StatelessWidget {
 
                 // Text, Text Input, Text Rich Widget Page Button
                 RoundedButton(
-                  buttonName: 'Text Input & Text Rich',
+                  buttonName: 'Text Input & Rich Text',
                   textStyle: textStyle16(),
                   callBack: () {
                     Navigator.push(

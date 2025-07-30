@@ -7,7 +7,7 @@ class TextInputWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Text Input & Text Rich Page')),
+      appBar: AppBar(title: Text('Text Input & Rich Text Page')),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
