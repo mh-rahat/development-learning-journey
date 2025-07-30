@@ -42,7 +42,7 @@ class RoundedButton extends StatelessWidget {
                   Text(buttonName, style: textStyle),
                 ],
               )
-            : Text(buttonName, style: textStyle),
+            : Text(buttonName, style: textStyle,),
       ),
     );
   }

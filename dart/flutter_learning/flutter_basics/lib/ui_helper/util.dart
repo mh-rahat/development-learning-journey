@@ -13,6 +13,7 @@ TextStyle textStyle16() {
     fontSize: 16,
     fontWeight: FontWeight.bold,
     color: Colors.white,
+    fontFamily: 'FontOswald',
   );
 }
 
