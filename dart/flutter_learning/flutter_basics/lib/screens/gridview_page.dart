@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/ui_helper/util.dart';
 
-class GridviewPageWidgetPage extends StatelessWidget {
-  const GridviewPageWidgetPage({super.key});
+class GridviewWidgetPage extends StatelessWidget {
+  const GridviewWidgetPage({super.key});
   @override
   Widget build(BuildContext context) {
     var arrColors = [

@@ -13,14 +13,15 @@ class ImageWidgetPage extends StatelessWidget {
 
 
 
-//  ElevatedButton(
-//               onPressed: () {
-//                 Navigator.push(
-//                   context,
-//                   MaterialPageRoute(
-//                     builder: (context) => const TextWidgetPage(),
-//                   ),
-//                 );
-//               },
-//               child: Text('Text'),
-//             ),
+// RoundedButton(
+//                   buttonName: 'Custom Widget',
+//                   textStyle: textStyle16(),
+//                   callBack: () {
+//                     Navigator.push(
+//                       context,
+//                       MaterialPageRoute(
+//                         builder: (context) => const CustomWidgetPage(),
+//                       ),
+//                     );
+//                   },
+//                 ),

@@ -17,6 +17,7 @@ import 'package:flutter_basics/screens/listview_page.dart';
 import 'package:flutter_basics/screens/margin_padding_page.dart';
 import 'package:flutter_basics/screens/scrollview_page.dart';
 import 'package:flutter_basics/screens/text_input_page.dart';
+import 'package:flutter_basics/widgets/rounded_button.dart';
 
 void main() {
   runApp(MyApp());
@@ -57,233 +58,261 @@ class HomeSreen extends StatelessWidget {
       ),
 
       body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            children: [
-              Text('Click on a Topic !', style: textStyle20()),
-              SizedBox(height: 20),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Column(
+              children: [
+                Text('Click on a Topic !', style: textStyle20()),
+                SizedBox(height: 20),
 
-              // Container Page Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ContainerPage(),
-                    ),
-                  );
-                },
-                child: Text('Container'),
-              ),
+                // Container Page Button
+                RoundedButton(
+                  buttonName: 'Container',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ContainerWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Text Widget Page Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TextInputWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Text Input'),
-              ),
+                // Text Input Widget Page Button
+                RoundedButton(
+                  buttonName: 'Text Input',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const TextInputWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Center Widget Page Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const CenterWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Center'),
-              ),
+                // Center Widget Page Button
+                RoundedButton(
+                  buttonName: 'Center',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CenterWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Button Widget Page
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ButtonWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Button'),
-              ),
+                // Button Widget Page
+                RoundedButton(
+                  buttonName: 'Button',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ButtonWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Image Widget Button
-              ElevatedButton(
-                child: Text('Image'),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ImageWidgetPage(),
-                    ),
-                  );
-                },
-              ),
+                // Image Widget Button
+                RoundedButton(
+                  buttonName: 'Image',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ImageWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Column & Row Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ColumnRowWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Column & Row'),
-              ),
+                // Column & Row Widget Button
+                RoundedButton(
+                  buttonName: 'Column & Row',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ColumnRowWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Inkwell Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const InkwellWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Inkwell Page'),
-              ),
+                // Inkwell Widget Button
+                RoundedButton(
+                  buttonName: 'Inkwell',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const InkwellWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Scrollview Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ScrollviewWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Scrollview'),
-              ),
+                // Scrollview Widget Button
+                RoundedButton(
+                  buttonName: 'ScrollView',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ScrollviewWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Listview Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ListviewWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Listview'),
-              ),
+                // Listview Widget Button
+                RoundedButton(
+                  buttonName: 'ListView',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ListviewWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // CircleAvatar Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const CircleAvatarWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('CircleAvatar'),
-              ),
+                // CircleAvatar Widget Button
+                RoundedButton(
+                  buttonName: 'CircleAvatar',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CircleAvatarWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Expanded Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ExpandedWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Expanded'),
-              ),
+                // Expanded Widget Button
+                RoundedButton(
+                  buttonName: 'Expanded',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ExpandedWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Margin Padding Widget Page
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const MarginPaddingWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Margin & Padding'),
-              ),
+                // Margin Padding Widget Page
+                RoundedButton(
+                  buttonName: 'Margin & Padding',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MarginPaddingWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Date & Time Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const DateTimeWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Date & Time'),
-              ),
+                // Date & Time Widget Button
+                RoundedButton(
+                  buttonName: 'Date & Time',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const DateTimeWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Date & Time Picker Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const DateTimePickerWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Date & Time Picker'),
-              ),
+                // Date & Time Picker Widget Button
+                RoundedButton(
+                  buttonName: 'Date & Time Picker',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const DateTimePickerWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Gridview Widget Button
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const GridviewPageWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Gridview'),
-              ),
+                // Gridview Widget Button
+                RoundedButton(
+                  buttonName: 'GridView',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GridviewWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Callback Function Page
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const CallbackFunctionPage(),
-                    ),
-                  );
-                },
-                child: Text('Callback Function'),
-              ),
+                // Callback Function Page
+                RoundedButton(
+                  buttonName: 'Callback Function',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CallbackFunctionPage(),
+                      ),
+                    );
+                  },
+                ),
 
-              // Custom Widget Page
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const CustomWidgetPage(),
-                    ),
-                  );
-                },
-                child: Text('Custom Widget'),
-              ),
-            ],
+                // Custom Widget Page
+                RoundedButton(
+                  buttonName: 'Custom Widget',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CustomWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
+                RoundedButton(
+                  buttonName: 'play',
+                  icon: Icon(Icons.play_arrow, color: Colors.white),
+                  callBack: () {
+                    debugPrint('Play Clicked!!');
+                  },
+                  textStyle: textStyle16(),
+                ),
+              ],
+            ),
           ),
         ),
       ),

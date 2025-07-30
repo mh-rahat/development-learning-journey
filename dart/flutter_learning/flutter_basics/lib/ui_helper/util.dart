@@ -8,6 +8,14 @@ TextStyle textStyle20() {
   );
 }
 
+TextStyle textStyle16() {
+  return TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+  );
+}
+
 TextStyle textStyle25({
   Color textColor = Colors.black,
   FontWeight fontWeight = FontWeight.normal,
@@ -25,5 +33,3 @@ var emailText = TextEditingController();
 var passwordText = TextEditingController();
 
 var time = DateTime.now();
-
-
