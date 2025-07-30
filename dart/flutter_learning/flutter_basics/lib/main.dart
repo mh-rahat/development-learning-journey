@@ -35,7 +35,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         appBarTheme: AppBarTheme(backgroundColor: Colors.lightBlue),
         textTheme: TextTheme(
-          headlineLarge: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
+          headlineLarge: TextStyle(
+            fontSize: 21,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'FontOswald',
+          ),
         ),
       ),
       home: HomeSreen(),
