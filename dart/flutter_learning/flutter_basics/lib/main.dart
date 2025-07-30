@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/screens/stack_page.dart';
 import 'package:flutter_basics/ui_helper/util.dart';
 import 'package:flutter_basics/screens/button_page.dart';
 import 'package:flutter_basics/screens/callback_functioni.dart';
@@ -307,6 +308,8 @@ class HomeSreen extends StatelessWidget {
                     );
                   },
                 ),
+
+                // Just Normal Play Button
                 RoundedButton(
                   buttonName: 'play',
                   icon: Icon(Icons.play_arrow, color: Colors.white),
@@ -314,6 +317,20 @@ class HomeSreen extends StatelessWidget {
                     debugPrint('Play Clicked!!');
                   },
                   textStyle: textStyle16(),
+                ),
+
+                //Stack Widget Button
+                RoundedButton(
+                  buttonName: 'Stack Widget',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const StackWidgetPage(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
