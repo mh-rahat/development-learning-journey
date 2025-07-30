@@ -4,12 +4,9 @@ class ImageWidgetPage extends StatelessWidget {
   const ImageWidgetPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-    );
+    return Scaffold(appBar: AppBar(title: Text('data')));
   }
 }
-
-
 
 class CallbackFunctionPage extends StatefulWidget {
   const CallbackFunctionPage({super.key});
@@ -18,13 +15,9 @@ class CallbackFunctionPage extends StatefulWidget {
 }
 
 class _CallbackFunctionPageState extends State<CallbackFunctionPage> {
-
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      
-    );
+    return Scaffold(appBar: AppBar(title: Text('data')));
   }
 }
 
