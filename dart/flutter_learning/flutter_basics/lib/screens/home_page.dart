@@ -6,6 +6,7 @@ import 'package:flutter_basics/screens/counter_app_page.dart';
 import 'package:flutter_basics/screens/data_passing_page_1.dart';
 import 'package:flutter_basics/screens/icon_page.dart';
 import 'package:flutter_basics/screens/mapping_list_page.dart';
+import 'package:flutter_basics/screens/range_page.dart';
 import 'package:flutter_basics/screens/sizedbox_page.dart';
 import 'package:flutter_basics/screens/stack_page.dart';
 import 'package:flutter_basics/screens/wrap_page.dart';
@@ -426,8 +427,6 @@ class HomePage extends StatelessWidget {
                 ),
 
                 // Data Passing one screen to another page Button
-                
-                
                 RoundedButton(
                   buttonName: 'Data Passing',
                   textStyle: textStyle16(),
@@ -436,6 +435,20 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const DataPassingPage1(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Range Pabe Button
+                RoundedButton(
+                  buttonName: 'Range',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const RangePage(),
                       ),
                     );
                   },
