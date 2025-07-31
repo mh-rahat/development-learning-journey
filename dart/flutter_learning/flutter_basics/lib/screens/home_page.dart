@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/screens/basic_calculator_app.dart';
 import 'package:flutter_basics/screens/bmi_app.dart';
+import 'package:flutter_basics/screens/clip_rrect_page.dart';
 import 'package:flutter_basics/screens/constraint_box_page.dart';
 import 'package:flutter_basics/screens/counter_app_page.dart';
 import 'package:flutter_basics/screens/data_passing_page_1.dart';
@@ -51,7 +52,7 @@ class HomePage extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                Text('Click on a Topic !', style: textStyle20(),),
+                Text('Click on a Topic !', style: textStyle20()),
 
                 // Container Page Button
                 RoundedButton(
@@ -450,6 +451,20 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const RangePage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Clip Rrect Page Button
+                RoundedButton(
+                  buttonName: 'Clip Rrect',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ClipRrectPage(),
                       ),
                     );
                   },
