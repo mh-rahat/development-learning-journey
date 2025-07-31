@@ -13,11 +13,7 @@ class GradiantScaffold extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [
-              Colors.blue.shade200,
-              Colors.blueGrey.shade100,
-              Colors.cyan.shade50,
-            ],
+            colors: [Colors.blue.shade200, Colors.cyan.shade200],
           ),
         ),
         child: SafeArea(child: body),
