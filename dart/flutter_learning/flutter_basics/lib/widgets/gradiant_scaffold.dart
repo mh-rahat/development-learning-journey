@@ -15,8 +15,8 @@ class GradiantScaffold extends StatelessWidget {
           gradient: LinearGradient(
             colors: [
               Colors.blue.shade200,
-              Colors.orange.shade100,
-              Colors.cyan.shade200,
+              Colors.blueGrey.shade100,
+              Colors.cyan.shade50,
             ],
           ),
         ),
