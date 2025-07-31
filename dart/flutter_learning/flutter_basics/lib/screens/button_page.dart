@@ -28,6 +28,8 @@ class ButtonWidgetPage extends StatelessWidget {
                 debugPrint('Elevated Button Pressed!');
               },
             ),
+
+            // Outlined Button 
             OutlinedButton(
               child: Text('Outlined Button'),
               onPressed: () {
