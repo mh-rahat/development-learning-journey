@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class DateTimePickerWidgetPage extends StatefulWidget {
   const DateTimePickerWidgetPage({super.key});
@@ -11,7 +12,7 @@ class DateTimePickerWidgetPage extends StatefulWidget {
 class _DateTimePickerWidgetPageState extends State<DateTimePickerWidgetPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Date & Time Picker Page')),
       body: Center(
         child: Column(

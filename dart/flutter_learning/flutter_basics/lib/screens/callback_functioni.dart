@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class CallbackFunctionPage extends StatefulWidget {
   const CallbackFunctionPage({super.key});
@@ -13,9 +14,18 @@ class _CallbackFunctionPageState extends State<CallbackFunctionPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Callback Function Page')),
-      body: ElevatedButton(onPressed: callBack, child: Text('Click Me!!')),
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(onPressed: callBack, child: Text('Click Me!!')),
+          ],
+        ),
+      ),
     );
   }
 }

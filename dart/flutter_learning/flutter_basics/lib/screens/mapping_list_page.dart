@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class MappingListPage extends StatelessWidget {
   const MappingListPage({super.key});
@@ -15,7 +16,7 @@ class MappingListPage extends StatelessWidget {
       {'name': 'Abu Bakar', 'mobile no': '7730980384', 'unread': '4'},
     ];
 
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Mapping List Page')),
       body: SizedBox(
         child: ListView(

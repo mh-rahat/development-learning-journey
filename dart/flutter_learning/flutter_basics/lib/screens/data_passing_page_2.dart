@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class DataPassingPage2 extends StatelessWidget {
   final String nameFromData1;
   const DataPassingPage2(this.nameFromData1, {super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('My Profile')),
       body: Container(
         color: Colors.blueGrey.shade200,

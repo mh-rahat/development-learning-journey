@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class ContainerWidgetPage extends StatelessWidget {
   const ContainerWidgetPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Container Page')),
       body: SizedBox(
         width: double.infinity,

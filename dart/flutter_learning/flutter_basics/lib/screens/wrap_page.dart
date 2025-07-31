@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class WrapWidgetPage extends StatelessWidget {
   const WrapWidgetPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Wrap Widget Button ')),
       body: SizedBox(
         width: double.infinity,

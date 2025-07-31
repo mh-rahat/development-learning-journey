@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class CenterWidgetPage extends StatelessWidget {
   const CenterWidgetPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Center Widget Page')),
       body: Center(
         child: Container(

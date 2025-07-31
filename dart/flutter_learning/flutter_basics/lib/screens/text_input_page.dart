@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/ui_helper/util.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class TextInputWidgetPage extends StatelessWidget {
   const TextInputWidgetPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Text Input & Rich Text Page')),
       body: Center(
         child: Padding(

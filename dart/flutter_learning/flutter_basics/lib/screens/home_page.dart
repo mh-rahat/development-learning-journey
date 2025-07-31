@@ -28,13 +28,14 @@ import 'package:flutter_basics/screens/listview_page.dart';
 import 'package:flutter_basics/screens/margin_padding_page.dart';
 import 'package:flutter_basics/screens/scrollview_page.dart';
 import 'package:flutter_basics/screens/text_input_page.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 import 'package:flutter_basics/widgets/rounded_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(
         title: Text(
           'Flutter Basics',
@@ -50,7 +51,7 @@ class HomePage extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                Text('Click on a Topic !', style: textStyle20()),
+                Text('Click on a Topic !', style: textStyle20(),),
 
                 // Container Page Button
                 RoundedButton(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class RangePage extends StatefulWidget {
   const RangePage({super.key});
@@ -16,7 +17,7 @@ class _RangePageState extends State<RangePage> {
       values.start.toString(),
       values.end.toString(),
     );
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Range Page')),
       body: Center(
         child: RangeSlider(

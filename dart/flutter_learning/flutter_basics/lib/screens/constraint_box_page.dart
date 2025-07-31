@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class ConstraintBoxWidgetPage extends StatelessWidget {
   const ConstraintBoxWidgetPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Constraint Box Page')),
       body: ConstrainedBox(
         constraints: BoxConstraints(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class ListviewWidgetPage extends StatelessWidget {
   const ListviewWidgetPage({super.key});
@@ -18,7 +19,7 @@ class ListviewWidgetPage extends StatelessWidget {
       'Emon',
       'Saimon',
     ];
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Listview Page')),
       body: ListView.separated(
         itemBuilder: (context, index) {

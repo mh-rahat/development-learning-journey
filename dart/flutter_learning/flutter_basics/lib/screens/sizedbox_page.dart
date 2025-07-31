@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class SizedboxWidgetPage extends StatelessWidget {
   const SizedboxWidgetPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('SizedBox Page')),
       body: Wrap(
         direction: Axis.vertical,

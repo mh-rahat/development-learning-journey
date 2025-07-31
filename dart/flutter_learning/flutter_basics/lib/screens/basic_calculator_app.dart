@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class BasicCalculatorAppPage extends StatefulWidget {
   const BasicCalculatorAppPage({super.key});
@@ -12,7 +13,7 @@ class _BasicCalculatorAppPage extends State<BasicCalculatorAppPage> {
   var result = '';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Basic Calculator App Page')),
       body: Container(
         color: Colors.blue.shade100,

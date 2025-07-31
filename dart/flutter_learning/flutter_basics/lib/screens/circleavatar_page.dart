@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class CircleAvatarWidgetPage extends StatelessWidget {
   const CircleAvatarWidgetPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('CircleAvatar Page')),
       body: Center(
         child: CircleAvatar(

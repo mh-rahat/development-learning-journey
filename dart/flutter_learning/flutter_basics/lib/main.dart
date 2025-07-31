@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
             fontFamily: 'FontOswald',
           ),
         ),
+      
       ),
       home: SplashPage(),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class BMIAppPage extends StatefulWidget {
   const BMIAppPage({super.key});
@@ -16,7 +17,7 @@ class _BMIAppPageState extends State<BMIAppPage> {
   var backgroundColor = Colors.blue.shade100;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('BMI App')),
       body: Center(
         child: Container(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class CounterAppPage extends StatefulWidget {
   const CounterAppPage({super.key});
@@ -11,7 +12,7 @@ class _CounterAppPageState extends State<CounterAppPage> {
   var count = 0;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Counter App Page')),
       body: Center(
         child: Column(

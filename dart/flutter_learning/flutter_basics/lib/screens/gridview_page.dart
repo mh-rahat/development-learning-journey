@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/ui_helper/util.dart';
+import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class GridviewWidgetPage extends StatelessWidget {
   const GridviewWidgetPage({super.key});
@@ -19,7 +20,7 @@ class GridviewWidgetPage extends StatelessWidget {
       Colors.blueAccent,
       Colors.deepOrange,
     ];
-    return Scaffold(
+    return GradiantScaffold(
       appBar: AppBar(title: Text('Gridview Page')),
       body: SingleChildScrollView(
         child: Column(
