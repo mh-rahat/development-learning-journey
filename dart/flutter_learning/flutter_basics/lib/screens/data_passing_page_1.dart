@@ -16,6 +16,11 @@ class DataPassingPage1 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Text(
+                'Write Something',
+                style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 50),
               TextField(controller: nameController),
               SizedBox(height: 11),
               ElevatedButton(
@@ -23,9 +28,8 @@ class DataPassingPage1 extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>  DataPassingPage2(
-                        (nameController.text.toString()),
-                      ),
+                      builder: (context) =>
+                          DataPassingPage2((nameController.text.toString())),
                     ),
                   );
                 },
