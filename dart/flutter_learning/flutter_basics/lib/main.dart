@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/screens/basic_calculator_app.dart';
+import 'package:flutter_basics/screens/bmi_app.dart';
 import 'package:flutter_basics/screens/constraint_box_page.dart';
 import 'package:flutter_basics/screens/counter_app_page.dart';
 import 'package:flutter_basics/screens/icon_page.dart';
@@ -435,6 +436,20 @@ class HomeSreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const ConstraintBoxWidgetPage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // BMI App Page Button
+                RoundedButton(
+                  buttonName: 'BMI App',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const BMIAppPage(),
                       ),
                     );
                   },
