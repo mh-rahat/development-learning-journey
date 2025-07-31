@@ -22,7 +22,7 @@ class _BMIAppPageState extends State<BMIAppPage> {
         child: Container(
           color: backgroundColor,
           child: Center(
-            child: Container(
+            child: SizedBox(
               width: 300,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
