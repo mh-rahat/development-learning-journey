@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/ui_helper/util.dart';
 import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
 class FooAnimatedWidgetPage extends StatefulWidget {
@@ -20,6 +21,9 @@ class _FooAnimatedWidgetPageState extends State<FooAnimatedWidgetPage> {
     color: Colors.blueGrey,
   );
 
+  var myOpacity = 1.0;
+  bool isVisible = true;
+
   @override
   Widget build(BuildContext context) {
     return GradiantScaffold(
@@ -28,6 +32,8 @@ class _FooAnimatedWidgetPageState extends State<FooAnimatedWidgetPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Animated Container
+            Text('Animated Container', style: textStyle20()),
             AnimatedContainer(
               width: _width,
               height: _height,
@@ -58,6 +64,30 @@ class _FooAnimatedWidgetPageState extends State<FooAnimatedWidgetPage> {
                 });
               },
               child: Text('Animate'),
+            ),
+            SizedBox(height: 50),
+
+            // Animated Opacity
+            Text('Animated Opacity', style: textStyle20()),
+            AnimatedOpacity(
+              opacity: myOpacity,
+              duration: Duration(seconds: 1),
+              curve: Curves.easeInSine,
+              child: Container(width: 200, height: 100, color: Colors.blue),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  if (isVisible) {
+                    myOpacity = 0.0; // invisible
+                    isVisible = false;
+                  } else {
+                    myOpacity = 1.0; // visible
+                    isVisible = true;
+                  }
+                });
+              },
+              child: Text('Close'),
             ),
           ],
         ),
