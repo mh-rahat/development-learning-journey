@@ -486,9 +486,9 @@ class HomePage extends StatelessWidget {
                   },
                 ),
 
-                // Hero Animation Page 
+                // Hero Animation Page
                 RoundedButton(
-                  buttonName: 'Hero Animation Page',
+                  buttonName: 'Hero Animation',
                   textStyle: textStyle16(),
                   callBack: () {
                     Navigator.push(
