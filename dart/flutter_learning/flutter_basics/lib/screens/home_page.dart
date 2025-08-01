@@ -473,7 +473,7 @@ class HomePage extends StatelessWidget {
 
                 // Animated Container Page Button
                 RoundedButton(
-                  buttonName: 'Foo Animation Page',
+                  buttonName: 'Foo Animation',
                   textStyle: textStyle16(),
                   callBack: () {
                     Navigator.push(
