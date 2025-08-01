@@ -6,6 +6,7 @@ import 'package:flutter_basics/screens/clip_rrect_page.dart';
 import 'package:flutter_basics/screens/constraint_box_page.dart';
 import 'package:flutter_basics/screens/counter_app_page.dart';
 import 'package:flutter_basics/screens/data_passing_page_1.dart';
+import 'package:flutter_basics/screens/hero_animation_page.dart';
 import 'package:flutter_basics/screens/icon_page.dart';
 import 'package:flutter_basics/screens/mapping_list_page.dart';
 import 'package:flutter_basics/screens/range_page.dart';
@@ -479,8 +480,21 @@ class HomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) =>
-                            const FooAnimatedWidgetPage(),
+                        builder: (context) => const FooAnimatedPage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Hero Animation Page 
+                RoundedButton(
+                  buttonName: 'Hero Animation Page',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HeroAnimationPage(),
                       ),
                     );
                   },

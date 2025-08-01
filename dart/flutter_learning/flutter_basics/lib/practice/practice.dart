@@ -8,18 +8,6 @@ class ImageWidgetPage extends StatelessWidget {
   }
 }
 
-class CallbackFunctionPage extends StatefulWidget {
-  const CallbackFunctionPage({super.key});
-  @override
-  State<CallbackFunctionPage> createState() => _CallbackFunctionPageState();
-}
-
-class _CallbackFunctionPageState extends State<CallbackFunctionPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('data')));
-  }
-}
 
 
 

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basics/ui_helper/util.dart';
 import 'package:flutter_basics/widgets/gradiant_scaffold.dart';
 
-class FooAnimatedWidgetPage extends StatefulWidget {
-  const FooAnimatedWidgetPage({super.key});
+class FooAnimatedPage extends StatefulWidget {
+  const FooAnimatedPage({super.key});
 
   @override
-  State<FooAnimatedWidgetPage> createState() => _FooAnimatedWidgetPageState();
+  State<FooAnimatedPage> createState() => _FooAnimatedPageState();
 }
 
-class _FooAnimatedWidgetPageState extends State<FooAnimatedWidgetPage> {
+class _FooAnimatedPageState extends State<FooAnimatedPage> {
   var _width = 200.0;
 
   var _height = 100.0;
