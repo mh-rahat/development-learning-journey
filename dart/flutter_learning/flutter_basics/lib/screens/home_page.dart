@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/screens/foo_animation_page.dart';
 import 'package:flutter_basics/screens/basic_calculator_app.dart';
 import 'package:flutter_basics/screens/bmi_app.dart';
 import 'package:flutter_basics/screens/clip_rrect_page.dart';
@@ -465,6 +466,21 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const ClipRrectPage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Animated Container Page Button
+                RoundedButton(
+                  buttonName: 'Foo Animation Page',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const FooAnimatedWidgetPage(),
                       ),
                     );
                   },
