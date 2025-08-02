@@ -1,0 +1,9 @@
+import 'package:flutter/material.dart';
+
+class TweenAnimationPage extends StatelessWidget {
+  const TweenAnimationPage({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(appBar: AppBar(title: Text('Tween Animation Page')));
+  }
+}

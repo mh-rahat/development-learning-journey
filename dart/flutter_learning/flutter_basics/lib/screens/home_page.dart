@@ -13,6 +13,7 @@ import 'package:flutter_basics/screens/mapping_list_page.dart';
 import 'package:flutter_basics/screens/range_page.dart';
 import 'package:flutter_basics/screens/sizedbox_page.dart';
 import 'package:flutter_basics/screens/stack_page.dart';
+import 'package:flutter_basics/screens/tween_animation_page.dart';
 import 'package:flutter_basics/screens/wrap_page.dart';
 import 'package:flutter_basics/ui_helper/util.dart';
 import 'package:flutter_basics/screens/button_page.dart';
@@ -510,6 +511,20 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const ListWheelScrollviewPage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Tween Animation Page Button
+                RoundedButton(
+                  buttonName: 'Tween Animation',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const TweenAnimationPage(),
                       ),
                     );
                   },
