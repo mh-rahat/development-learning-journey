@@ -12,6 +12,7 @@ import 'package:flutter_basics/screens/list_wheel_scrollview_page.dart';
 import 'package:flutter_basics/screens/mapping_list_page.dart';
 import 'package:flutter_basics/screens/range_page.dart';
 import 'package:flutter_basics/screens/ripple_effect_animation_page.dart';
+import 'package:flutter_basics/screens/shared_preferences_page.dart';
 import 'package:flutter_basics/screens/sizedbox_page.dart';
 import 'package:flutter_basics/screens/stack_page.dart';
 import 'package:flutter_basics/screens/tween_animation_page.dart';
@@ -540,6 +541,20 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const RippleEffectAnimationPage(),
+                      ),
+                    );
+                  },
+                ),
+
+                // Shared Preferences Page Button
+                RoundedButton(
+                  buttonName: 'Shared Preferences',
+                  textStyle: textStyle16(),
+                  callBack: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SharedPreferencesPage(),
                       ),
                     );
                   },
