@@ -1,0 +1,45 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_leaerning/widgets/gradiant_scaffold.dart';
+
+class ButtonWidgetPage extends StatelessWidget {
+  const ButtonWidgetPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GradiantScaffold(
+      appBar: AppBar(title: Text('Button Page')),
+      body: Center(
+        child: Column(
+          children: [
+            // Text Button
+            TextButton(
+              onPressed: () {
+                debugPrint('Text Button Tapped !');
+              },
+              onLongPress: () {
+                debugPrint('Long Pressed !');
+              },
+              child: Text('Text Button'),
+            ),
+
+            // Elevated Button
+            ElevatedButton(
+              child: Text('Elevated Button'),
+              onPressed: () {
+                debugPrint('Elevated Button Pressed!');
+              },
+            ),
+
+            // Outlined Button 
+            OutlinedButton(
+              child: Text('Outlined Button'),
+              onPressed: () {
+                debugPrint('Outlined Button Pressed!');
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
