@@ -43,7 +43,6 @@ class _SharedPreferencesPageState extends State<SharedPreferencesPage> {
                 SizedBox(height: 11),
                 ElevatedButton(
                   onPressed: () async {
-                    // var name = nameController.text.toString();
                     var preferences = await SharedPreferences.getInstance();
                     preferences.setString(
                       keyName,
