@@ -8,8 +8,8 @@ class StackWidgetPage extends StatelessWidget {
     return GradiantScaffold(
       appBar: AppBar(title: Text('Stack Widget Page')),
       body: SizedBox(
-        width: 300,
-        height: 300,
+        width: double.infinity,
+        height: double.infinity,
         child: Stack(
           children: [
             Positioned(

@@ -15,8 +15,9 @@ class _BasicCalculatorAppPage extends State<BasicCalculatorAppPage> {
   Widget build(BuildContext context) {
     return GradiantScaffold(
       appBar: AppBar(title: Text('Basic Calculator App Page')),
-      body: Container(
-        color: Colors.blue.shade100,
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(8.0),

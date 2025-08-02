@@ -8,8 +8,9 @@ class DataPassingPage2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return GradiantScaffold(
       appBar: AppBar(title: Text('My Profile')),
-      body: Container(
-        color: Colors.blueGrey.shade200,
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

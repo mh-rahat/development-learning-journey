@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_leaerning/screens/detail_hero_animation_page.dart';
-
 class HeroAnimationPage extends StatefulWidget {
   const HeroAnimationPage({super.key});
 

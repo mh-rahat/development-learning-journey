@@ -7,51 +7,55 @@ class SizedboxWidgetPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GradiantScaffold(
       appBar: AppBar(title: Text('SizedBox Page')),
-      body: Wrap(
-        direction: Axis.vertical,
-        children: [
-          SizedBox.square(
-            dimension: 90,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
+        child: Wrap(
+          direction: Axis.vertical,
+          children: [
+            SizedBox.square(
+              dimension: 90,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
+                child: Text('Click'),
               ),
-              child: Text('Click'),
             ),
-          ),
-          SizedBox(width: 30, height: 30),
-          SizedBox.square(
-            dimension: 90,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+            SizedBox(width: 30, height: 30),
+            SizedBox.square(
+              dimension: 90,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
+                child: Text('Click'),
               ),
-              child: Text('Click'),
             ),
-          ),
-          SizedBox(width: 100, height: 100),
-          SizedBox.square(
-            dimension: 90,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+            SizedBox(width: 100, height: 100),
+            SizedBox.square(
+              dimension: 90,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
+                child: Text('Click'),
               ),
-              child: Text('Click'),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -14,7 +14,11 @@ class ConstraintBoxWidgetPage extends StatelessWidget {
           minWidth: 200,
           minHeight: 100,
         ),
-        child: ElevatedButton(onPressed: () {}, child: Text('Click')),
+        child: SizedBox(
+          width: double.infinity,
+          height: double.infinity,
+          child: ElevatedButton(onPressed: () {}, child: Text('Click')),
+        ),
       ),
     );
   }

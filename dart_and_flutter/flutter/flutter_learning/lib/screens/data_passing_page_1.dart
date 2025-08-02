@@ -11,8 +11,9 @@ class DataPassingPage1 extends StatelessWidget {
 
     return GradiantScaffold(
       appBar: AppBar(title: Text('Data Passing Page')),
-      body: Container(
-        color: Colors.blueGrey.shade200,
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

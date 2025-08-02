@@ -7,25 +7,29 @@ class ExpandedWidgetPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GradiantScaffold(
       appBar: AppBar(title: Text('Expanded Widget Page')),
-      body: Column(
-        children: [
-          Expanded(
-            flex: 2,
-            child: Container(width: 100, height: 100, color: Colors.blue),
-          ),
-          Expanded(
-            flex: 4,
-            child: Container(width: 100, height: 100, color: Colors.orange),
-          ),
-          Expanded(
-            flex: 2,
-            child: Container(width: 100, height: 100, color: Colors.blueGrey),
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(width: 100, height: 100, color: Colors.green),
-          ),
-        ],
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+          children: [
+            Expanded(
+              flex: 2,
+              child: Container(width: 100, height: 100, color: Colors.blue),
+            ),
+            Expanded(
+              flex: 4,
+              child: Container(width: 100, height: 100, color: Colors.orange),
+            ),
+            Expanded(
+              flex: 2,
+              child: Container(width: 100, height: 100, color: Colors.blueGrey),
+            ),
+            Expanded(
+              flex: 1,
+              child: Container(width: 100, height: 100, color: Colors.green),
+            ),
+          ],
+        ),
       ),
     );
   }
