@@ -7,11 +7,16 @@ class UiHelper {
   }) {
     return SizedBox(
       width: 300,
-      height: 35,
+      height: 50,
       child: ElevatedButton(
         onPressed: () {
-          callback;
+          callback();
         },
+        style: ElevatedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(40),
+          ),
+        ),
         child: Text(
           buttonName,
           style: TextStyle(fontSize: 14, color: Colors.white),

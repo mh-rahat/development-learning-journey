@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/on_boarding/on_boarding.dart';
+import 'package:whatsapp_clone/screens/onboarding/onboarding_screen.dart';
 import 'package:whatsapp_clone/widgets/ui_helper.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -31,16 +31,13 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              width: 83,
-              height: 83,
-              child: Image.asset('assets/images/whatsapp_logo.png'),
-            ),
+            Image.asset('assets/images/whatsapp_logo.png'),
             SizedBox(height: 10),
             UiHelper.customText(
               text: 'WhatsApp',
               height: 18,
               fontweight: FontWeight.bold,
+              color: Color(0xff000000),
             ),
           ],
         ),
