@@ -49,6 +49,13 @@ class UiHelper {
         borderRadius: BorderRadius.circular(10),
         color: Color.fromARGB(217, 226, 226, 219),
       ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: TextField(
+          controller: controller,
+          decoration: InputDecoration(border: InputBorder.none),
+        ),
+      ),
     );
   }
 }
