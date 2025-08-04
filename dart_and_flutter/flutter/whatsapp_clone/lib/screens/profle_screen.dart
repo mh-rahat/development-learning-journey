@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:whatsapp_clone/widgets/ui_helper.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -137,33 +136,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   _pickImage(ImageSource imagesource) async {
     try {
-      if (imagesource == ImageSource.camera) {
-        var status = await Permission.camera.request();
-
-        if (!status.isGranted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Galery permission denied. Please allow it from settings',
-              ),
-              backgroundColor: Color(0xff05aa82),
-            ),
-          );
-          return;
-        }
-      }
       final photo = await ImagePicker().pickImage(source: imagesource);
       if (photo == null) return;
       final tempimage = File(photo.path);
-
       setState(() {
         pickedimage = tempimage;
       });
     } catch (ex) {
-      ScaffoldMessenger.of(context).showSnackBar(
+      return ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(ex.toString()),
-          backgroundColor: Color(0xff05aa82),
+          backgroundColor: Color(0XFF00A884),
         ),
       );
     }

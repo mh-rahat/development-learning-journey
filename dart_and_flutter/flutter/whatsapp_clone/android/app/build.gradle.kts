@@ -6,9 +6,9 @@ plugins {
 }
 
 android {
+    ndkVersion = "29.0.13846066"
     namespace = "com.example.whatsapp_clone"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
