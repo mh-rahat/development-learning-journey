@@ -40,4 +40,15 @@ class UiHelper {
       ),
     );
   }
+
+  static CustomContainer(TextEditingController controller) {
+    return Container(
+      height: 40,
+      width: 40,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: Color.fromARGB(217, 226, 226, 219),
+      ),
+    );
+  }
 }
