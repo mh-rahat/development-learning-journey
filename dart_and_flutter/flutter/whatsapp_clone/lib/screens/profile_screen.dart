@@ -1,12 +1,24 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:whatsapp_clone/widgets/ui_helper.dart';
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
 
   @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  var nameController = TextEditingController();
+
+  File? pickedimage;
+
+  @override
   Widget build(BuildContext context) {
-    var nameController = TextEditingController();
     return Scaffold(
       body: Center(
         child: Column(
@@ -26,14 +38,24 @@ class ProfileScreen extends StatelessWidget {
             SizedBox(height: 5),
             UiHelper.customText(text: 'profile photo', height: 14),
             SizedBox(height: 30),
-            CircleAvatar(
-              radius: 90,
-              backgroundColor: Color(0xffd9d9d9),
-              child: Image.asset(
-                'assets/images/photo_camera.png',
-                height: 50,
-                fit: BoxFit.fill,
-              ),
+            GestureDetector(
+              onTap: () {
+                _openBottom(context);
+              },
+              child: pickedimage == null
+                  ? CircleAvatar(
+                      radius: 90,
+                      backgroundColor: Color(0xffd9d9d9),
+                      child: Image.asset(
+                        'assets/images/photo_camera.png',
+                        height: 50,
+                        fit: BoxFit.fill,
+                      ),
+                    )
+                  : CircleAvatar(
+                      radius: 80,
+                      backgroundImage: FileImage(pickedimage!),
+                    ),
             ),
 
             SizedBox(height: 40),
@@ -77,5 +99,73 @@ class ProfileScreen extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
+  }
+
+  _openBottom(BuildContext context) {
+    return showModalBottomSheet(
+      context: context,
+      builder: (BuildContext context) {
+        return Container(
+          height: 200,
+          width: 200,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      _pickImage(ImageSource.camera);
+                    },
+                    icon: Icon(Icons.camera_alt, size: 80, color: Colors.grey),
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      _pickImage(ImageSource.gallery);
+                    },
+                    icon: Icon(Icons.image, size: 80, color: Colors.grey),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  _pickImage(ImageSource imagesource) async {
+    try {
+      if (imagesource == ImageSource.camera) {
+        var status = await Permission.camera.request();
+
+        if (!status.isGranted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                'Galery permission denied. Please allow it from settings',
+              ),
+              backgroundColor: Color(0xff05aa82),
+            ),
+          );
+          return;
+        }
+      }
+      final photo = await ImagePicker().pickImage(source: imagesource);
+      if (photo == null) return;
+      final tempimage = File(photo.path);
+
+      setState(() {
+        pickedimage = tempimage;
+      });
+    } catch (ex) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(ex.toString()),
+          backgroundColor: Color(0xff05aa82),
+        ),
+      );
+    }
   }
 }
