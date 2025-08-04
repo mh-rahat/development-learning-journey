@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screens/login/login_screen.dart';
+import 'package:whatsapp_clone/screens/login_screen.dart';
 import 'package:whatsapp_clone/widgets/ui_helper.dart';
 
 class OnBoardingScreen extends StatelessWidget {
