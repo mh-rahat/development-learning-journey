@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screens/otp_screen.dart';
+import 'package:whatsapp_clone/screens/otp_screen/otp_screen.dart';
 import 'package:whatsapp_clone/widgets/ui_helper.dart';
 
 class LoginScreen extends StatefulWidget {

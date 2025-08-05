@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screens/profle_screen.dart';
+import 'package:whatsapp_clone/screens/profile_screen/profle_screen.dart';
 import 'package:whatsapp_clone/widgets/ui_helper.dart';
 
 class OTPScreen extends StatelessWidget {
