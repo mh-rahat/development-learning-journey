@@ -8,7 +8,7 @@ class ChatsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var arrContent = [
       {
-        'images':
+        'image':
             'https://cdn.pixabay.com/photo/2023/02/17/16/25/man-7796384_1280.jpg',
         'name': 'Dennis Ritchie',
         'lastmessage': 'Hello Brother',
@@ -16,7 +16,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '3',
       },
       {
-        'images':
+        'image':
             'https://p3.hippopx.com/preview/1003/434/man-model-beard-long-hair-suit-serious-expression-style-fashion-km-nazrul-islam-thumbnail.jpg',
         'name': 'Linus Torvalds',
         'lastmessage': 'how is going your life',
@@ -32,7 +32,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '7',
       },
       {
-        'images':
+        'image':
             'https://image.winudf.com/v2/image1/Y29tLm1vYmVhc3lhcHAuYXBwOTA5MTk0NTYxNzNfc2NyZWVuXzBfMTY2MDAzNzc0Nl8wMjY/screen-0.jpg?fakeurl=1&type=.jpg',
         'name': 'Guido van Rossum',
         'lastmessage': "right now, i'm in airport.",
@@ -40,7 +40,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '1',
       },
       {
-        'images':
+        'image':
             'https://cdn.pixabay.com/photo/2023/02/17/16/25/man-7796384_1280.jpg',
         'name': 'James Gosling',
         'lastmessage': 'Hello Brother',
@@ -48,7 +48,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '3',
       },
       {
-        'images':
+        'image':
             'https://p3.hippopx.com/preview/1003/434/man-model-beard-long-hair-suit-serious-expression-style-fashion-km-nazrul-islam-thumbnail.jpg',
         'name': 'Tim Berners-Lee',
         'lastmessage': 'how is going your life',
@@ -56,7 +56,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '2',
       },
       {
-        'images':
+        'image':
             'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
         'name': 'Donald Knuth',
         'lastmessage': 'how are  you bro?',
@@ -64,7 +64,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '7',
       },
       {
-        'images':
+        'image':
             'https://image.winudf.com/v2/image1/Y29tLm1vYmVhc3lhcHAuYXBwOTA5MTk0NTYxNzNfc2NyZWVuXzBfMTY2MDAzNzc0Nl8wMjY/screen-0.jpg?fakeurl=1&type=.jpg',
         'name': 'Anders Hejisberg',
         'lastmessage': "right now, i'm in airport.",
@@ -72,7 +72,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '1',
       },
       {
-        'images':
+        'image':
             'https://cdn.pixabay.com/photo/2023/02/17/16/25/man-7796384_1280.jpg',
         'name': 'Brian Kernighan',
         'lastmessage': 'Hello Brother',
@@ -88,7 +88,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '2',
       },
       {
-        'images':
+        'image':
             'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
         'name': 'Alan Turing',
         'lastmessage': 'how are  you bro?',
@@ -96,7 +96,7 @@ class ChatsScreen extends StatelessWidget {
         'message': '7',
       },
       {
-        'images':
+        'image':
             'https://image.winudf.com/v2/image1/Y29tLm1vYmVhc3lhcHAuYXBwOTA5MTk0NTYxNzNfc2NyZWVuXzBfMTY2MDAzNzc0Nl8wMjY/screen-0.jpg?fakeurl=1&type=.jpg',
         'name': 'Bill Gates',
         'lastmessage': "right now, i'm in airport.",
@@ -115,7 +115,7 @@ class ChatsScreen extends StatelessWidget {
                   leading: CircleAvatar(
                     radius: 50,
                     backgroundImage: NetworkImage(
-                      arrContent[index]['images'].toString(),
+                      arrContent[index]['image'].toString(),
                     ),
                   ),
                   title: UiHelper.customText(
