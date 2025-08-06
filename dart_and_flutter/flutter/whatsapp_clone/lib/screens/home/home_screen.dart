@@ -24,20 +24,19 @@ class HomeScreen extends StatelessWidget {
             ],
             indicatorColor: Colors.white,
           ),
-          toolbarHeight: 100,
+          toolbarHeight: 40,
           title: UiHelper.customText(
             text: 'WhatsApp',
             height: 20,
             color: Colors.white,
+            fontweight: FontWeight.bold,
           ),
           actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: IconButton(
-                onPressed: () {},
-                icon: Image.asset('assets/images/search.png'),
-              ),
+            IconButton(
+              onPressed: () {},
+              icon: Image.asset('assets/images/search.png'),
             ),
+            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert_sharp)),
           ],
         ),
         body: TabBarView(
