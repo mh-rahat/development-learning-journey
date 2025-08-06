@@ -29,7 +29,7 @@ class ChatsScreen extends StatelessWidget {
         'name': 'Dennis Ritchie',
         'lastmessage': "What's going your learning journey brother!!",
         'time': '09:48 am',
-        'message': '3',
+        'message': '2',
       },
       {
         'image':
@@ -37,7 +37,7 @@ class ChatsScreen extends StatelessWidget {
         'name': 'Linus Torvalds',
         'lastmessage': "I have faith in you",
         'time': '11:05 am',
-        'message': '2',
+        'message': '5',
       },
       {
         'image':
@@ -45,7 +45,7 @@ class ChatsScreen extends StatelessWidget {
         'name': 'Bjarne Stroustrup',
         'lastmessage': "You're the future!!",
         'time': '12:55 pm',
-        'message': '7',
+        'message': '1',
       },
       {
         'image':
@@ -53,7 +53,7 @@ class ChatsScreen extends StatelessWidget {
         'name': 'Guido van Rossum',
         'lastmessage': "should I visit your country ?",
         'time': '01:17 pm',
-        'message': '1',
+        'message': '4',
       },
       {
         'image':
@@ -61,7 +61,7 @@ class ChatsScreen extends StatelessWidget {
         'name': 'Donald Knuth',
         'lastmessage': "Let's build together!!",
         'time': '3:12 pm',
-        'message': '7',
+        'message': '3',
       },
       {
         'image':
@@ -77,7 +77,7 @@ class ChatsScreen extends StatelessWidget {
         'name': 'James Gosling',
         'lastmessage': 'Hello Brother',
         'time': '08:09 pm',
-        'message': '3',
+        'message': '4',
       },
 
       {
@@ -94,7 +94,7 @@ class ChatsScreen extends StatelessWidget {
         'name': 'Brian Kernighan',
         'lastmessage': 'Hello Brother',
         'time': '05:34 am',
-        'message': '3',
+        'message': '2',
       },
     ];
     return Scaffold(
