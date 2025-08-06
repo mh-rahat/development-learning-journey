@@ -13,15 +13,15 @@ class ChatsScreen extends StatelessWidget {
         'name': 'Bill Gates',
         'lastmessage': "right now, i'm in airport. come here and receive me. ",
         'time': '06:35 am',
-        'message': '1',
+        'message': '3',
       },
       {
         'image':
             'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRXvlD5YAOPgiwNVEF1hIXk_-sxH45qRjpd679YFd9ntZ1_YBpnb6saipxcGs6lMUgM',
         'name': 'Alan Turing',
-        'lastmessage': 'how are you bro?',
+        'lastmessage': "Hello Rahat, What's up?",
         'time': '07:03 am',
-        'message': '7',
+        'message': '1',
       },
       {
         'image':
