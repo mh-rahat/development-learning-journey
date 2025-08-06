@@ -13,7 +13,7 @@ class ChatsScreen extends StatelessWidget {
             'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU2JRbbl3LBOm_an3eI5iplFhOoLESyBwUfmWDO49BS1EYuGUE',
         'name': 'Elon Musk',
         'lastmessage': "Let's Build Together!!",
-        'time': '06:35 am',
+        'time': '04:35 PM',
         'message': '3',
       },
       {
@@ -21,7 +21,7 @@ class ChatsScreen extends StatelessWidget {
             'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTXy1di9MvPCkTqd933oO0Lx5QS1CuSr-2PmH119LI6uqRcrpJpb4pAPY9dhCmBmRfr',
         'name': 'Bill Gates',
         'lastmessage': "Should I visit your Country means Bangladesh ?",
-        'time': '01:45 pm',
+        'time': '03:55 PM',
         'message': '1',
       },
       {
@@ -29,7 +29,7 @@ class ChatsScreen extends StatelessWidget {
             'https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQFfD2peuQDljoEoroLKmBr0rAPQMKe8ek0s8GiKwXYzX0mA5gfNnviQ5rEdmy-cH04',
         'name': 'Mukesh Ambani',
         'lastmessage': 'We Should meet ASAP!!',
-        'time': '05:34 am',
+        'time': '03:06 PM',
         'message': '2',
       },
       {
@@ -37,7 +37,7 @@ class ChatsScreen extends StatelessWidget {
             'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1rDH_nWadT1GXFPomdutqV1PUMA8uXIWS2Js5_fq4pJ1lwG16',
         'name': 'Mark Zuckerberg',
         'lastmessage': "Hello Rahat, What's up?",
-        'time': '07:03 am',
+        'time': '01:45 PM',
         'message': '1',
       },
       {
@@ -45,7 +45,7 @@ class ChatsScreen extends StatelessWidget {
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdc9MzAdymADlhNLC_tk1hkqlWUxub7evb1UXCTZudRgozRo6jaY03_l7MhNZ8PaZQp_A&usqp=CAU',
         'name': 'Jeff Bezos',
         'lastmessage': "I have faith in you bro.",
-        'time': '09:48 am',
+        'time': '12:22 PM',
         'message': '2',
       },
       {
@@ -53,7 +53,7 @@ class ChatsScreen extends StatelessWidget {
             'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0U5a32I81EyodYLVvHBNs7GSlBgmag51JRMz_0RQ2DqthEDKr',
         'name': 'Warren Buffett',
         'lastmessage': "I'm going to invest in your company.",
-        'time': '3:12 pm',
+        'time': '11:32 AM',
         'message': '3',
       },
       {
@@ -61,7 +61,7 @@ class ChatsScreen extends StatelessWidget {
             'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcS8EkIIXGv-Bf0hlfR6YCEms_8oqpWY4fMfP_0tH0yJixrQVZLqjKL9t37I4UsF71wC',
         'name': 'Amancio Ortega',
         'lastmessage': 'Hello Brother',
-        'time': '08:09 pm',
+        'time': '9:21 AM',
         'message': '4',
       },
       {
@@ -69,7 +69,7 @@ class ChatsScreen extends StatelessWidget {
             'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPAQfc03o7FiZ1xqlgnOkGHXNh5sjm8hB72Z0a5XSENQExW1mn',
         'name': 'Larry  Ellison',
         'lastmessage': "What's going your learning journey?",
-        'time': '11:05 am',
+        'time': '7:25 AM',
         'message': '5',
       },
       {
@@ -77,7 +77,7 @@ class ChatsScreen extends StatelessWidget {
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0C0S90JjfMI-KEJhICkktIw_YR6x4QhJQpJn0cUBUgvcQJzfI',
         'name': 'Bernard Arnault',
         'lastmessage': "You're the future!!",
-        'time': '12:55 pm',
+        'time': '5:03 AM',
         'message': '1',
       },
 

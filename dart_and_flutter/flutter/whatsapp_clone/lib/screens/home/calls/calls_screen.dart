@@ -17,7 +17,7 @@ class CallsScreen extends StatelessWidget {
         'image':
             'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTXy1di9MvPCkTqd933oO0Lx5QS1CuSr-2PmH119LI6uqRcrpJpb4pAPY9dhCmBmRfr',
         'name': 'Bill Gates',
-        'calltime': '5hours ago',
+        'calltime': '5 hours ago',
       },
       {
         'image':
