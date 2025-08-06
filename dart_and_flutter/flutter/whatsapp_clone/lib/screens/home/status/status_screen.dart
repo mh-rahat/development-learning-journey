@@ -9,19 +9,19 @@ class StatusScreen extends StatelessWidget {
     var statusContent = [
       {
         'image':
-            'https://cdn.pixabay.com/photo/2023/02/17/16/25/man-7796384_1280.jpg',
+            'https://cdn.slidesharecdn.com/ss_thumbnails/dennisrichie-170604142843-thumbnail.jpg?width=640&height=640&fit=bounds',
         'name': 'Dennis Ritchie',
         'statustime': '15 min ago',
       },
       {
         'image':
-            'https://p3.hippopx.com/preview/1003/434/man-model-beard-long-hair-suit-serious-expression-style-fashion-km-nazrul-islam-thumbnail.jpg',
+            'https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg?w=400&h=300&c=crop',
         'name': 'Linus Torvalds',
         'statustime': '34 min ago',
       },
       {
         'image':
-            'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3S9TIOYcoF07oj_vRpexH3drQjUtJoBASK0uJrpGtjE5nO0Zc',
         'name': 'Bjarne Stroustrup',
         'statustime': '1 hours ago',
       },

@@ -9,63 +9,80 @@ class ChatsScreen extends StatelessWidget {
     var arrContent = [
       {
         'image':
-            'https://cdn.pixabay.com/photo/2023/02/17/16/25/man-7796384_1280.jpg',
-        'name': 'Dennis Ritchie',
-        'lastmessage': 'Hello Brother',
-        'time': '05:34 am',
-        'message': '3',
-      },
-      {
-        'image':
-            'https://p3.hippopx.com/preview/1003/434/man-model-beard-long-hair-suit-serious-expression-style-fashion-km-nazrul-islam-thumbnail.jpg',
-        'name': 'Linus Torvalds',
-        'lastmessage': 'how is going your life',
-        'time': '04:23 pm',
-        'message': '2',
-      },
-      {
-        'image':
-            'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
-        'name': 'Bjarne Stroustrup',
-        'lastmessage': 'how are  you bro?',
-        'time': '06:03 am',
-        'message': '7',
-      },
-      {
-        'image':
-            'https://image.winudf.com/v2/image1/Y29tLm1vYmVhc3lhcHAuYXBwOTA5MTk0NTYxNzNfc2NyZWVuXzBfMTY2MDAzNzc0Nl8wMjY/screen-0.jpg?fakeurl=1&type=.jpg',
-        'name': 'Guido van Rossum',
-        'lastmessage': "right now, i'm in airport.",
-        'time': '01:45 pm',
+            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTXy1di9MvPCkTqd933oO0Lx5QS1CuSr-2PmH119LI6uqRcrpJpb4pAPY9dhCmBmRfr',
+        'name': 'Bill Gates',
+        'lastmessage': "right now, i'm in airport. come here and receive me. ",
+        'time': '06:35 am',
         'message': '1',
       },
       {
         'image':
-            'https://cdn.pixabay.com/photo/2023/02/17/16/25/man-7796384_1280.jpg',
-        'name': 'James Gosling',
-        'lastmessage': 'Hello Brother',
-        'time': '05:34 am',
-        'message': '3',
-      },
-      {
-        'image':
-            'https://p3.hippopx.com/preview/1003/434/man-model-beard-long-hair-suit-serious-expression-style-fashion-km-nazrul-islam-thumbnail.jpg',
-        'name': 'Tim Berners-Lee',
-        'lastmessage': 'how is going your life',
-        'time': '04:23 pm',
-        'message': '2',
-      },
-      {
-        'image':
-            'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
-        'name': 'Donald Knuth',
-        'lastmessage': 'how are  you bro?',
-        'time': '06:03 am',
+            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRXvlD5YAOPgiwNVEF1hIXk_-sxH45qRjpd679YFd9ntZ1_YBpnb6saipxcGs6lMUgM',
+        'name': 'Alan Turing',
+        'lastmessage': 'how are you bro?',
+        'time': '07:03 am',
         'message': '7',
       },
       {
         'image':
-            'https://image.winudf.com/v2/image1/Y29tLm1vYmVhc3lhcHAuYXBwOTA5MTk0NTYxNzNfc2NyZWVuXzBfMTY2MDAzNzc0Nl8wMjY/screen-0.jpg?fakeurl=1&type=.jpg',
+            'https://cdn.slidesharecdn.com/ss_thumbnails/dennisrichie-170604142843-thumbnail.jpg?width=640&height=640&fit=bounds',
+        'name': 'Dennis Ritchie',
+        'lastmessage': "What's going your learning journey brother!!",
+        'time': '09:48 am',
+        'message': '3',
+      },
+      {
+        'image':
+            'https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg?w=400&h=300&c=crop',
+        'name': 'Linus Torvalds',
+        'lastmessage': "I have faith in you",
+        'time': '11:05 am',
+        'message': '2',
+      },
+      {
+        'image':
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3S9TIOYcoF07oj_vRpexH3drQjUtJoBASK0uJrpGtjE5nO0Zc',
+        'name': 'Bjarne Stroustrup',
+        'lastmessage': "You're the future!!",
+        'time': '12:55 pm',
+        'message': '7',
+      },
+      {
+        'image':
+            'https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcS62t2jTUZiMltHM239bQcHG8zNGAImOpH993mfILcfISTuewISa7I4vb3jBMiMSgWz',
+        'name': 'Guido van Rossum',
+        'lastmessage': "should I visit your country ?",
+        'time': '01:17 pm',
+        'message': '1',
+      },
+      {
+        'image':
+            'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWAgB-SWBQyzoNX-KHRzCpIAdSkuP5z-tBxIlDSvwJ_tLHuWGG',
+        'name': 'Donald Knuth',
+        'lastmessage': "Let's build together!!",
+        'time': '3:12 pm',
+        'message': '7',
+      },
+      {
+        'image':
+            'https://www.invent.org/sites/default/files/styles/inductee_media/public/inductees/2022-06/KenThompson_edited%20for%20web.jpg?h=a93236bb',
+        'name': 'Ken Thompson',
+        'lastmessage': "We should meet ASAP!!",
+        'time': '04:54 pm',
+        'message': '2',
+      },
+      {
+        'image':
+            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRRS9R4mDgl-AbthR7vvphkbf4Ki1SGatuXpQ-XsASlnnaVFV0aCtKcf-maPFaHFSjL',
+        'name': 'James Gosling',
+        'lastmessage': 'Hello Brother',
+        'time': '08:09 pm',
+        'message': '3',
+      },
+
+      {
+        'image':
+            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSvCyA7ZYccpriL_lTUFUvIKjcuFiARrC6y2hflmnQX-GZq5GrbIrLHsZ1tNpqtON5t',
         'name': 'Anders Hejisberg',
         'lastmessage': "right now, i'm in airport.",
         'time': '01:45 pm',
@@ -73,35 +90,11 @@ class ChatsScreen extends StatelessWidget {
       },
       {
         'image':
-            'https://cdn.pixabay.com/photo/2023/02/17/16/25/man-7796384_1280.jpg',
+            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAx3MxqQKNAm4LZ6CGkAjzUBGCUcIBuXTuQzdRaNOgMebvTWF5',
         'name': 'Brian Kernighan',
         'lastmessage': 'Hello Brother',
         'time': '05:34 am',
         'message': '3',
-      },
-      {
-        'image':
-            'https://p3.hippopx.com/preview/1003/434/man-model-beard-long-hair-suit-serious-expression-style-fashion-km-nazrul-islam-thumbnail.jpg',
-        'name': 'Ken Thompson',
-        'lastmessage': 'how is going your life',
-        'time': '04:23 pm',
-        'message': '2',
-      },
-      {
-        'image':
-            'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
-        'name': 'Alan Turing',
-        'lastmessage': 'how are  you bro?',
-        'time': '06:03 am',
-        'message': '7',
-      },
-      {
-        'image':
-            'https://image.winudf.com/v2/image1/Y29tLm1vYmVhc3lhcHAuYXBwOTA5MTk0NTYxNzNfc2NyZWVuXzBfMTY2MDAzNzc0Nl8wMjY/screen-0.jpg?fakeurl=1&type=.jpg',
-        'name': 'Bill Gates',
-        'lastmessage': "right now, i'm in airport.",
-        'time': '01:45 pm',
-        'message': '1',
       },
     ];
     return Scaffold(
