@@ -99,7 +99,7 @@ class ChatsScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 return ListTile(
                   leading: CircleAvatar(
-                    radius: 50,
+                    radius: 25,
                     backgroundImage: NetworkImage(
                       arrContent[index]['image'].toString(),
                     ),
