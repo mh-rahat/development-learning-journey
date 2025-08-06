@@ -10,91 +10,83 @@ class ChatsScreen extends StatelessWidget {
     var arrContent = [
       {
         'image':
-            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTXy1di9MvPCkTqd933oO0Lx5QS1CuSr-2PmH119LI6uqRcrpJpb4pAPY9dhCmBmRfr',
-        'name': 'Bill Gates',
-        'lastmessage': "right now, i'm in airport. come here and receive me. ",
+            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU2JRbbl3LBOm_an3eI5iplFhOoLESyBwUfmWDO49BS1EYuGUE',
+        'name': 'Elon Musk',
+        'lastmessage': "Let's Build Together!!",
         'time': '06:35 am',
         'message': '3',
       },
       {
         'image':
-            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRXvlD5YAOPgiwNVEF1hIXk_-sxH45qRjpd679YFd9ntZ1_YBpnb6saipxcGs6lMUgM',
-        'name': 'Alan Turing',
+            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTXy1di9MvPCkTqd933oO0Lx5QS1CuSr-2PmH119LI6uqRcrpJpb4pAPY9dhCmBmRfr',
+        'name': 'Bill Gates',
+        'lastmessage': "Should I visit your Country means Bangladesh ?",
+        'time': '01:45 pm',
+        'message': '1',
+      },
+      {
+        'image':
+            'https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQFfD2peuQDljoEoroLKmBr0rAPQMKe8ek0s8GiKwXYzX0mA5gfNnviQ5rEdmy-cH04',
+        'name': 'Mukesh Ambani',
+        'lastmessage': 'We Should meet ASAP!!',
+        'time': '05:34 am',
+        'message': '2',
+      },
+      {
+        'image':
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1rDH_nWadT1GXFPomdutqV1PUMA8uXIWS2Js5_fq4pJ1lwG16',
+        'name': 'Mark Zuckerberg',
         'lastmessage': "Hello Rahat, What's up?",
         'time': '07:03 am',
         'message': '1',
       },
       {
         'image':
-            'https://cdn.slidesharecdn.com/ss_thumbnails/dennisrichie-170604142843-thumbnail.jpg?width=640&height=640&fit=bounds',
-        'name': 'Dennis Ritchie',
-        'lastmessage': "What's going your learning journey brother!!",
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdc9MzAdymADlhNLC_tk1hkqlWUxub7evb1UXCTZudRgozRo6jaY03_l7MhNZ8PaZQp_A&usqp=CAU',
+        'name': 'Jeff Bezos',
+        'lastmessage': "I have faith in you bro.",
         'time': '09:48 am',
         'message': '2',
       },
       {
         'image':
-            'https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg?w=400&h=300&c=crop',
-        'name': 'Linus Torvalds',
-        'lastmessage': "I have faith in you",
-        'time': '11:05 am',
-        'message': '5',
-      },
-      {
-        'image':
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3S9TIOYcoF07oj_vRpexH3drQjUtJoBASK0uJrpGtjE5nO0Zc',
-        'name': 'Bjarne Stroustrup',
-        'lastmessage': "You're the future!!",
-        'time': '12:55 pm',
-        'message': '1',
-      },
-      {
-        'image':
-            'https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcS62t2jTUZiMltHM239bQcHG8zNGAImOpH993mfILcfISTuewISa7I4vb3jBMiMSgWz',
-        'name': 'Guido van Rossum',
-        'lastmessage': "should I visit your country ?",
-        'time': '01:17 pm',
-        'message': '4',
-      },
-      {
-        'image':
-            'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWAgB-SWBQyzoNX-KHRzCpIAdSkuP5z-tBxIlDSvwJ_tLHuWGG',
-        'name': 'Donald Knuth',
-        'lastmessage': "Let's build together!!",
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0U5a32I81EyodYLVvHBNs7GSlBgmag51JRMz_0RQ2DqthEDKr',
+        'name': 'Warren Buffett',
+        'lastmessage': "I'm going to invest in your company.",
         'time': '3:12 pm',
         'message': '3',
       },
       {
         'image':
-            'https://www.invent.org/sites/default/files/styles/inductee_media/public/inductees/2022-06/KenThompson_edited%20for%20web.jpg?h=a93236bb',
-        'name': 'Ken Thompson',
-        'lastmessage': "We should meet ASAP!!",
-        'time': '04:54 pm',
-        'message': '2',
-      },
-      {
-        'image':
-            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRRS9R4mDgl-AbthR7vvphkbf4Ki1SGatuXpQ-XsASlnnaVFV0aCtKcf-maPFaHFSjL',
-        'name': 'James Gosling',
+            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcS8EkIIXGv-Bf0hlfR6YCEms_8oqpWY4fMfP_0tH0yJixrQVZLqjKL9t37I4UsF71wC',
+        'name': 'Amancio Ortega',
         'lastmessage': 'Hello Brother',
         'time': '08:09 pm',
         'message': '4',
       },
-
       {
         'image':
-            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSvCyA7ZYccpriL_lTUFUvIKjcuFiARrC6y2hflmnQX-GZq5GrbIrLHsZ1tNpqtON5t',
-        'name': 'Anders Hejisberg',
-        'lastmessage': "right now, i'm in airport.",
-        'time': '01:45 pm',
-        'message': '1',
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPAQfc03o7FiZ1xqlgnOkGHXNh5sjm8hB72Z0a5XSENQExW1mn',
+        'name': 'Larry  Ellison',
+        'lastmessage': "What's going your learning journey?",
+        'time': '11:05 am',
+        'message': '5',
       },
       {
         'image':
-            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAx3MxqQKNAm4LZ6CGkAjzUBGCUcIBuXTuQzdRaNOgMebvTWF5',
-        'name': 'Brian Kernighan',
-        'lastmessage': 'Hello Brother',
-        'time': '05:34 am',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0C0S90JjfMI-KEJhICkktIw_YR6x4QhJQpJn0cUBUgvcQJzfI',
+        'name': 'Bernard Arnault',
+        'lastmessage': "You're the future!!",
+        'time': '12:55 pm',
+        'message': '1',
+      },
+
+      {
+        'image':
+            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREsD76ssKhVnGC2J8KUJjt5HrMgFBCNIeaoL9nG5XaOIM281G7',
+        'name': 'Steve Ballmer',
+        'lastmessage': "Hello Brother! Everything, Okay?",
+        'time': '04:54 pm',
         'message': '2',
       },
     ];
@@ -150,7 +142,10 @@ class ChatsScreen extends StatelessWidget {
 
       floatingActionButton: GestureDetector(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => ContactScreen(),));
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ContactScreen()),
+          );
         },
         child: CircleAvatar(
           radius: 35,

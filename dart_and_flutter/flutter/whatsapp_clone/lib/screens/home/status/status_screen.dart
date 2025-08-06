@@ -9,20 +9,20 @@ class StatusScreen extends StatelessWidget {
     var statusContent = [
       {
         'image':
-            'https://cdn.slidesharecdn.com/ss_thumbnails/dennisrichie-170604142843-thumbnail.jpg?width=640&height=640&fit=bounds',
-        'name': 'Dennis Ritchie',
+            'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTXy1di9MvPCkTqd933oO0Lx5QS1CuSr-2PmH119LI6uqRcrpJpb4pAPY9dhCmBmRfr',
+        'name': 'Bill Gates',
         'statustime': '15 min ago',
       },
       {
         'image':
-            'https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg?w=400&h=300&c=crop',
-        'name': 'Linus Torvalds',
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0U5a32I81EyodYLVvHBNs7GSlBgmag51JRMz_0RQ2DqthEDKr',
+        'name': 'Warren Buffett',
         'statustime': '34 min ago',
       },
       {
         'image':
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3S9TIOYcoF07oj_vRpexH3drQjUtJoBASK0uJrpGtjE5nO0Zc',
-        'name': 'Bjarne Stroustrup',
+            'https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQFfD2peuQDljoEoroLKmBr0rAPQMKe8ek0s8GiKwXYzX0mA5gfNnviQ5rEdmy-cH04',
+        'name': 'Mukesh Ambani',
         'statustime': '1 hours ago',
       },
     ];
