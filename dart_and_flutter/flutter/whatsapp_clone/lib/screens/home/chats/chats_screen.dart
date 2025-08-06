@@ -12,7 +12,7 @@ class ChatsScreen extends StatelessWidget {
         'image':
             'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU2JRbbl3LBOm_an3eI5iplFhOoLESyBwUfmWDO49BS1EYuGUE',
         'name': 'Elon Musk',
-        'lastmessage': "Let's Build Together!!",
+        'lastmessage': "Hey, Rahat! Let's Build Together!!",
         'time': '04:35 PM',
         'message': '3',
       },
