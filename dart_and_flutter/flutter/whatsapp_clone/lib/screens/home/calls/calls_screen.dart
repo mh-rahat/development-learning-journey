@@ -91,7 +91,7 @@ class CallsScreen extends StatelessWidget {
                   ),
                   title: UiHelper.customText(
                     text: callContent[index]['name'].toString(),
-                    height: 18,
+                    height: 14,
                     fontweight: FontWeight.bold,
                     color: Colors.black,
                   ),
